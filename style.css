@@ -110,6 +110,7 @@ body .main-top, .main-top a {
 }
 
 .logo {
+    display: block;
     font-size: 16px;
     font-weight: 500;
     padding-top: 6px;
@@ -117,6 +118,9 @@ body .main-top, .main-top a {
 .logo img {
     padding-right: 10px;
     margin-top: 6px;
+}
+.logo:hover {
+    text-decoration: none;
 }
 
 .menu-top {
@@ -1388,10 +1392,10 @@ body .main-top, .main-top a {
 
 .block-contact {
     background: radial-gradient(36.91% 304.36% at 29.14% 58.59%, #F3F7FF 33.15%, #CEDFFF 100%);
-    padding: 70px 0;
+    padding: 170px 0 285px;
 }
 .block-contact .img-block {
-    text-align: right;
+    text-align: center;
 }
 .block-contact .text-block {
     text-align: center;
@@ -1414,6 +1418,9 @@ body .main-top, .main-top a {
     text-decoration: none;
 }
 @media (max-width:1200px) {
+    .block-contact {
+        padding: 200px 0;
+    }
     .block-contact .img-block img {
         max-width: 130px;
     }
@@ -1429,7 +1436,7 @@ body .main-top, .main-top a {
 }
 @media (max-width:991px) {
     .block-contact {
-        padding: 50px 0;
+        padding: 190px 0;
     }
     .block-contact .img-block img {
         max-width: 120px;
@@ -1445,6 +1452,9 @@ body .main-top, .main-top a {
     }
 }
 @media (max-width:575px) {
+    .block-contact {
+        padding: 50px 0;
+    }
     .block-contact .img-block {
         padding-bottom: 15px;
         text-align: center;
@@ -1469,7 +1479,7 @@ body .main-top, .main-top a {
 }
 .block-privacy-top .img-block {
     padding: 55px 10px 0;
-    text-align: right;
+    text-align: center;
 }
 .block-privacy-top .text-block {
     font-size: 22px;
@@ -1984,10 +1994,10 @@ body .main-top, .main-top a {
 
     .slick-prev {
         background-image: url("/img/bg/arrow/left.svg");
-        left: 42%;
+        left: -5%;
     }
     .slick-next {
         background-image: url("/img/bg/arrow/right.svg");
-        right: 42%;
+        right: -5%;
     }
 }

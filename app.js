@@ -53,4 +53,16 @@ $(document).ready(function(){
     //     block_benefits_info__img.toggleClass('active')
     // }, 10000);
 
+    const form_subscribe = $('#form-subscribe')
+    if(form_subscribe.length)
+    {
+        form_subscribe.submit(function (e) {
+            e.preventDefault();
+
+
+            form_subscribe.find('a')[0].click()
+        })
+
+    }
+
 });
