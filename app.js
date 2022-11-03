@@ -33,6 +33,17 @@ $(document).ready(function(){
             },
         ]
     });
+    $('.best_choice').slick({
+        centerMode: true,
+        centerPadding: '25%',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        arrows: true,
+        dots: false,
+        pauseOnHover: true,
+    });
     // const qr_button = $('.banner .link_app_store_qr');
     // if($( window ).width() > 767) {
     //     // qr_button.click();
@@ -58,11 +69,23 @@ $(document).ready(function(){
     {
         form_subscribe.submit(function (e) {
             e.preventDefault();
-
-
-            form_subscribe.find('a')[0].click()
+            const dataString = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: form_subscribe.attr('action'),
+                data: dataString,
+                success: function (data) {
+                    form_subscribe.find('a')[0].click()
+                }
+            });
         })
-
+    }
+    const features = $('.block-about .features')
+    if(features.length)
+    {
+        setInterval(function () {
+            features.toggleClass('active')
+        }, 2000);
     }
 
 });
