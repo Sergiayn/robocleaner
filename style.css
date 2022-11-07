@@ -1117,7 +1117,7 @@ body .main-top, .main-top a {
     box-sizing: border-box;
     background: #7D6BE5;
     border: 0.5px solid #4A3E93;
-    box-shadow: 2px 2px 7px rgba(3, 7, 45, 0.29);
+    box-shadow: 0 0 10px rgb(3 7 45 / 29%);
     border-radius: 8px;
     color: white;
     padding: 8px 36px;
