@@ -448,7 +448,8 @@ body .main-top, .main-top a {
 
 .link_app a {
     border-radius: 5px;
-    filter: drop-shadow(0px 0px 7px rgba(3, 7, 45, 0.29));
+    /*filter: drop-shadow(0px 0px 7px rgba(3, 7, 45, 0.29));*/
+    box-shadow: 0 0 7px rgba(3, 7, 45, 0.29);
     height: 56px;
     display: inline-block;
     margin-right: 15px;
