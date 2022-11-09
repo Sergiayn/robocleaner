@@ -1801,6 +1801,9 @@ body .main-top, .main-top a {
     .footer .link_app {
         max-width: none;
     }
+    .footer .link_app a {
+        margin-bottom: 0;
+    }
     .footer_extra, .footer.footer_extra .sub_menu a {
         font-size: 12px;
     }
