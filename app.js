@@ -35,7 +35,8 @@ $(document).ready(function(){
     });
     $('.best_choice').slick({
         centerMode: true,
-        centerPadding: '25%',
+        // centerPadding: '25%',
+        centerPadding: '30px',
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
@@ -43,6 +44,9 @@ $(document).ready(function(){
         arrows: true,
         dots: false,
         pauseOnHover: true,
+        infinite: false,
+        initialSlide:1,
+
     });
     // const qr_button = $('.banner .link_app_store_qr');
     // if($( window ).width() > 767) {
