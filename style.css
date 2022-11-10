@@ -1652,6 +1652,8 @@ body .main-top, .main-top a {
     padding-bottom: 20px;
 }
 .footer .brief {
+    display: block;
+    color: white;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
