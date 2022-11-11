@@ -1875,16 +1875,16 @@ body .main-top, .main-top a {
 
 
 
-#modal_appstore_qr .modal-content {
+.modal_appstore_qr .modal-content {
     border-radius: 1.0rem;
 }
-#modal_appstore_qr .modal-title {
+.modal_appstore_qr .modal-title {
     font-size: 24px;
     font-weight: 700;
     margin: auto;
     padding-left: 70px;
 }
-#modal_appstore_qr .modal-body {
+.modal_appstore_qr .modal-body {
     text-align: center;
     padding-bottom: 40px;
 }
