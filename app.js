@@ -79,12 +79,15 @@ $(document).ready(function(){
                 url: form_subscribe.attr('action'),
                 data: dataString,
                 success: function (data) {
-                    // form_subscribe.find('a')[0].click()
                     form_subscribe.find('input[type="email"]').val('')
+                    $('#modalSubscribe').modal('show')
+                    // form_subscribe.find('a')[0].click()
                 }
             });
         })
     }
+
+
     const features = $('.block-about .features')
     if(features.length)
     {
