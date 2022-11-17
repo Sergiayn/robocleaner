@@ -43,9 +43,9 @@ body .main-top, .main-top a {
 .main-top {
     background: linear-gradient(89.91deg, #8080E5 -1.36%, #828EE5 11.92%, #849CE4 31.66%, #86AAE4 50.1%, #88B8E4 71.71%, #8AC6E3 88.38%, #8CD4E3 103.19%);
 
-    -webkit-box-shadow: 0px 5px 20px 0px rgba(119,119,119,1);
-    -moz-box-shadow: 0px 5px 20px 0px rgba(119,119,119,1);
-    box-shadow: 0px 5px 20px 0px rgba(119,119,119,1);
+    -webkit-box-shadow: 0 5px 20px 0 rgba(119,119,119,1);
+    -moz-box-shadow: 0 5px 20px 0 rgba(119,119,119,1);
+    box-shadow: 0 5px 20px 0 rgba(119,119,119,1);
     position: relative;
 
     width: 100%;
@@ -1875,6 +1875,16 @@ body .main-top, .main-top a {
 
 
 
+.modal-header .close {
+    position: absolute;
+    padding: 0;
+    right: 15px;
+    top: 10px;
+}
+.modal-header .close span {
+    display: block;
+    padding: 16px;
+}
 .modal_appstore_qr .modal-content {
     border-radius: 1.0rem;
 }
@@ -1882,7 +1892,6 @@ body .main-top, .main-top a {
     font-size: 24px;
     font-weight: 700;
     margin: auto;
-    padding-left: 70px;
 }
 .modal_appstore_qr .modal-body {
     text-align: center;
@@ -1899,7 +1908,7 @@ body .main-top, .main-top a {
 /* Slider */
 
 .slick-slide {
-    margin: 0px 20px;
+    margin: 0 20px;
 }
 @media (max-width:576px) {
     .slick-slide {
