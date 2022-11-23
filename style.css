@@ -501,8 +501,8 @@ body .main-top, .main-top a {
 
 .block-about {
     background:
-            url('/img/bg/block2_bg1_1.png') no-repeat 82% 60%,
-            url('/img/bg/block2_bg2.png') no-repeat left 60%;
+            url('/img/bg/block2_bg1_1.png') no-repeat 82% 78%,
+            url('/img/bg/block2_bg2.png') no-repeat left 78%;
 
     background-size: auto, 70%;
     /*transition: background 0.4s step-start;*/
@@ -543,7 +543,7 @@ body .main-top, .main-top a {
     }
 }
 .block-about-inner {
-    padding: 20px 50px 130px 150px;
+    padding: 50px 50px 50px 150px;
 }
 @media (max-width:1200px){
     .block-about-inner {
@@ -648,6 +648,7 @@ body .main-top, .main-top a {
 .block-about-inner .title {
     font-size: 36px;
     font-weight: 500;
+    margin-bottom: 10px;
     max-width: 410px;
 }
 .block-about-inner .title span {
@@ -676,6 +677,7 @@ body .main-top, .main-top a {
 .block-about-inner p {
     font-size: 18px;
     max-width: 450px;
+    text-align: justify;
 }
 @media (max-width:1200px){
     .block-about-inner p {
@@ -696,11 +698,13 @@ body .main-top, .main-top a {
 
 .block-about-inner .link_app {
     padding-top: 40px;
+    padding-right: 100px;
     text-align: center;
 }
 @media (max-width:1200px){
     .block-about-inner .link_app {
         padding-top: 20px;
+        padding-right: 0;
     }
     .block-about-inner .link_app a {
         height: 48px;
@@ -989,6 +993,7 @@ body .main-top, .main-top a {
 .block-why-robo-inner td p {
     font-size: 18px;
     font-weight: 400;
+    text-align: justify;
 }
 .block-why-robo-inner .status-success,
 .block-why-robo-inner .status-warn,
@@ -1551,6 +1556,49 @@ body .main-top, .main-top a {
     }
 }
 
+
+.block-term-of-use {
+    background: radial-gradient(36.91% 304.36% at 29.14% 58.59%, #F3F7FF 33.15%, #CEDFFF 100%);
+    padding: 22px 0 16px;
+}
+.block-term-of-use .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.block-term-of-use .content {
+    font-size: 22px;
+}
+@media (max-width:991px) {
+    .block-term-of-use .title {
+        font-size: 22px;
+    }
+    .block-term-of-use .content {
+        font-size: 16px;
+    }
+}
+@media (max-width:768px) {
+    .block-term-of-use {
+        padding: 10px 0;
+    }
+    .block-term-of-use .title {
+        font-size: 20px;
+    }
+    .block-term-of-use .content {
+        font-size: 18px;
+    }
+}
+@media (max-width:575px) {
+    .block-term-of-use .title {
+        font-size: 18px;
+    }
+    .block-term-of-use .content {
+        font-size: 15px;
+    }
+}
+
+
 .block-privacy-top {
     background: radial-gradient(40.02% 335.9% at 22.19% 61.54%, #F3F7FF 24.13%, #CEDFFF 100%);
     padding: 36px 0;
@@ -1875,31 +1923,6 @@ body .main-top, .main-top a {
 
 
 
-.modal-header .close {
-    position: absolute;
-    padding: 0;
-    right: 15px;
-    top: 10px;
-}
-.modal-header .close span {
-    display: block;
-    padding: 16px;
-}
-.modal_appstore_qr .modal-content {
-    border-radius: 1.0rem;
-}
-.modal_appstore_qr .modal-title {
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-}
-.modal_appstore_qr .modal-body {
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-
-
 
 
 
@@ -2125,6 +2148,35 @@ body .main-top, .main-top a {
     font-size: 34px;
     padding: 70px 0 85px;
     text-align: center;
+}
+
+
+.modal-header .close {
+    position: absolute;
+    padding: 0;
+    right: 15px;
+    top: 10px;
+}
+.modal-header .close span {
+    display: block;
+    padding: 16px;
+}
+.modal_appstore_qr .modal-content {
+    border-radius: 1.0rem;
+}
+.modal_appstore_qr .modal-title {
+    border: 0;
+    font-size: 24px;
+    font-weight: 700;
+    margin: auto;
+}
+.modal_appstore_qr .modal-body {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+.modal_appstore_qr .modal-dialog {
+    width: 270px;
 }
 
 @media (max-width:991px) {
