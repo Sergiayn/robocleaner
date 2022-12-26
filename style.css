@@ -1694,7 +1694,7 @@ body .main-top, .main-top a {
 }
 
 .footer .title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding-top: 25px;
     padding-bottom: 20px;
@@ -1702,7 +1702,7 @@ body .main-top, .main-top a {
 .footer .brief {
     display: block;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -1710,7 +1710,7 @@ body .main-top, .main-top a {
     margin-bottom: 6px;
 }
 .footer .desc {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 35px;
 }
