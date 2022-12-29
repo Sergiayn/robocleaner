@@ -205,7 +205,7 @@ body .main-top, .main-top a {
     flex-flow: column wrap;
 }
 .mobile-top-menu ul {
-    font-size: 14px;
+    font-size: 17px;
     list-style: none;
     padding-right: 0;
 }
@@ -2195,4 +2195,19 @@ body .main-top, .main-top a {
         font-size: 22px;
         padding: 30px 0 45px;
     }
+}
+
+#modalCookieAgreement .modal-body {
+    padding: 16px;
+}
+#modalCookieAgreement .accept {
+    box-sizing: border-box;
+    background: #7D6BE5;
+    border: 0.5px solid #4A3E93;
+    box-shadow: 0 0 10px rgb(3 7 45 / 29%);
+    border-radius: 8px;
+    color: white;
+    display: block;
+    margin: auto;
+    padding: 8px 36px;
 }
