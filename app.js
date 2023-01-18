@@ -26,9 +26,9 @@ $(document).ready(function(){
             {
                 breakpoint: 575,
                 settings: {
-                    arrows: true,
-                    centerMode: false,
-                    slidesToShow: 2
+                    arrows: false,
+                    centerMode: true,
+                    slidesToShow: 1
                 }
             },
         ]
@@ -37,7 +37,7 @@ $(document).ready(function(){
         centerMode: true,
         // centerPadding: '25%',
         centerPadding: '30px',
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 5000,
@@ -96,7 +96,7 @@ $(document).ready(function(){
         modal.find('.accept').click(() => {
             const date = new Date();
             date.setFullYear(date.getFullYear() + 10);
-            document.cookie = `${cookie_name}=1;path=/;expires=${date.toUTCString()};max-age=${date.toUTCString()};`
+            document.cookie = `${cookie_name}=1;path=/;expires=${date.toUTCString()};`
         })
     }
     modalCookieAgreement()
@@ -109,5 +109,11 @@ $(document).ready(function(){
             features.toggleClass('active')
         }, 2000);
     }
+
+    const checkFixedHeaderMenu = () => {
+        const fixed_header = $('.fixed-header')
+        fixed_header.parents('.main').css('padding-top',fixed_header.outerHeight())
+    }
+    checkFixedHeaderMenu()
 
 });
