@@ -116,4 +116,10 @@ $(document).ready(function(){
     }
     checkFixedHeaderMenu()
 
+    setTimeout(function (){
+        let download_link = $('.check_download_link')
+        if ('https://track-voluum.robocleaner.galaxys.info/click' === download_link.attr('href'))
+            download_link.attr('href', 'https://apps.apple.com/us/app/robocleaner/id1603385704')
+    },200)
+
 });
