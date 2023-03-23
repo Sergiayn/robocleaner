@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    Privacy
+    {{ $t("menu.privacy") }}
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    Terms of use
+    {{ $t("menu.terms_of_use") }}
   </div>
 </template>
 

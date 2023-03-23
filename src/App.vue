@@ -1,22 +1,26 @@
 <template>
-  <router-link to="/">Go to Home</router-link>
+  <change-language></change-language>
   <br>
-  <router-link to="/contact">Go to contact</router-link>
+  <router-link to="/">{{ $t("menu.home") }}</router-link>
   <br>
-  <router-link to="/privacy">Go to privacy</router-link>
+  <router-link to="/contact">{{ $t("menu.contact") }}</router-link>
   <br>
-  <router-link to="/terms-of-use">Ierms of use</router-link>
+  <router-link to="/privacy">{{ $t("menu.privacy") }}</router-link>
+  <br>
+  <router-link to="/terms-of-use">{{ $t("menu.terms_of_use") }}</router-link>
   <br>
   <RouterView />
 </template>
 
 <script>
+import ChangeLanguage from "@/components/ChangeLanguage.vue";
 import {RouterLink} from "vue-router";
 import {RouterView} from "vue-router";
 
 export default {
   name: 'App',
   components: {
+    ChangeLanguage,
     RouterLink,
     RouterView
   }

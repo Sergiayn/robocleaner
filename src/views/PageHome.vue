@@ -1,13 +1,13 @@
 <template>
   <div class="home">
-    home
+    {{ $t("menu.home") }}
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'PageHome',
+  name: 'PageHome'
 }
 </script>
 
