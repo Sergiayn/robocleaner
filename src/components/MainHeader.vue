@@ -1,0 +1,131 @@
+<template>
+  <header>
+    <div class="container">
+      <div v-if="screenWidth > 575" class="header-desktop">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <router-link to="/" class="logo">
+              <img src="@/assets/img/logo.svg" class="img-fluid" alt="RoboCleaner">
+              <span>RoboCleaner</span>
+            </router-link>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <div class="top-menu">
+              <ul>
+                <li><router-link to="/#block_screenshots">{{ $t("header.screenshots") }}</router-link></li>
+                <li><router-link to="/#block_why_robo_cleaner">{{ $t("header.why_robo_cleaner") }}</router-link></li>
+                <li><router-link to="/#block_subscribe">{{ $t("header.subscribe") }}</router-link></li>
+                <li><router-link to="/#block_plans">{{ $t("header.plans") }}</router-link></li>
+                <li><a href="https://apps.apple.com/us/app/robocleaner/id1603385704" class="download check_download_link">{{ $t("header.download") }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-else class="header-mobile">
+
+      </div>
+    </div>
+  </header>
+</template>
+
+<script>
+export default {
+  name: "MainHeader",
+  components: {
+
+  },
+  data() {
+    return {
+      screenWidth: 0,
+    };
+  },
+  mounted() {
+    this.updateScreenWidth();
+    this.onScreenResize();
+  },
+  methods: {
+    onScreenResize() {
+      window.addEventListener("resize", () => {
+        this.updateScreenWidth();
+      });
+    },
+    updateScreenWidth() {
+      this.screenWidth = window.innerWidth;
+    }
+  }
+}
+</script>
+
+<style scoped lang="sass">
+a
+  color: white
+
+header
+  background: linear-gradient(89.91deg, #8080E5 -1.36%, #828EE5 11.92%, #849CE4 31.66%, #86AAE4 50.1%, #88B8E4 71.71%, #8AC6E3 88.38%, #8CD4E3 103.19%)
+  -webkit-box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
+  -moz-box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
+  box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
+  overflow: hidden
+  position: fixed
+  top: 0
+  height: 95px
+  width: 100%
+
+.header-desktop
+  padding-top: 18px
+  .logo
+    display: block
+    font-size: 16px
+    font-weight: 500
+    padding-top: 6px
+    img
+      padding-right: 10px
+      margin-top: 6px
+  .top-menu
+    text-align: center
+    ul
+      display: flex
+      display: -webkit-flex
+      list-style: none
+      justify-content: space-evenly
+      margin-bottom: 0
+      padding: 5px 0
+    li
+      display: flex
+      display: -webkit-flex
+      flex-direction: column
+      font-size: 16px
+      font-weight: 500
+      -webkit-flex-direction: column
+      text-align: center
+      &:first-child
+        padding-left: 0
+      &:last-child
+        padding-right: 0
+        padding-left: 20px
+    a
+      padding: 12px 20px
+    .download
+      border: 1px solid white
+      border-radius: 8px
+      padding: 11px 20px
+
+@media (max-width: 992px)
+  .header-desktop
+    .logo
+      font-size: 14px
+    li
+      font-size: 14px
+      a
+        padding: 12px
+
+@media (max-width: 768px)
+  header
+    height: 77px
+
+@media (max-width: 575px)
+  header
+    height: 64px
+
+</style>
