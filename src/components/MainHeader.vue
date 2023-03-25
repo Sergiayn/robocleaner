@@ -71,6 +71,7 @@ header
   top: 0
   height: 95px
   width: 100%
+  z-index: 10
 
 .header-desktop
   padding-top: 18px
