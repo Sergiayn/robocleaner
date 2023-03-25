@@ -6,6 +6,14 @@ const translate = {
         subscribe: "Suscribirse",
         why_robo_cleaner: "Por qué RoboCleaner",
     },
+    footer: {
+        title: "Nuestros productos",
+        desc: "El mejor bloqueador de anuncios para el navegador Safari de iOS. AdBlocker es capaz de eliminar todo tipo de anuncios en Safari, proteger tu privacidad y reducir los tiempos de carga de las páginas.",
+        icon_1: "Bloquear sitios web con materiales sospechosos",
+        icon_2: "No más anuncios distractores",
+        icon_3: "Ahorra la vida de la batería con el bloqueador",
+        icon_4: "Bloquear sitios web con malware",
+    },
     menu: {
         contact: "Contacto",
         home: "Hogar",

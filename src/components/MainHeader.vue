@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <div v-if="screenWidth > 575" class="header-desktop">
+      <div v-if="screenWidth > 768" class="header-desktop">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
             <router-link to="/" class="logo">
@@ -13,7 +13,7 @@
             <div class="top-menu">
               <ul>
                 <li><router-link to="/#block_screenshots">{{ $t("header.screenshots") }}</router-link></li>
-                <li><router-link to="/#block_why_robo_cleaner">{{ $t("header.why_robo_cleaner") }}</router-link></li>
+                <li><router-link to="/#block_why_robo_cleaner" class="long-a">{{ $t("header.why_robo_cleaner") }}</router-link></li>
                 <li><router-link to="/#block_subscribe">{{ $t("header.subscribe") }}</router-link></li>
                 <li><router-link to="/#block_plans">{{ $t("header.plans") }}</router-link></li>
                 <li><a href="https://apps.apple.com/us/app/robocleaner/id1603385704" class="download check_download_link">{{ $t("header.download") }}</a></li>
@@ -23,7 +23,31 @@
         </div>
       </div>
       <div v-else class="header-mobile">
-
+        <a class="logo" href="/">
+          <img src="@/assets/img/logo.svg" class="img-fluid" alt="RoboCleaner">
+          <span>RoboCleaner</span>
+        </a>
+        <div class="mobile-top-menu">
+          <nav class="navbar navbar-dark">
+            <button @click="isOpenMobileMenu = !isOpenMobileMenu"
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+          <div class="collapse" :class="{show:isOpenMobileMenu}">
+            <ul>
+              <li><router-link to="/#block_screenshots">{{ $t("header.screenshots") }}</router-link></li>
+              <li><router-link to="/#block_why_robo_cleaner">{{ $t("header.why_robo_cleaner") }}</router-link></li>
+              <li><router-link to="/#block_subscribe">{{ $t("header.subscribe") }}</router-link></li>
+              <li><router-link to="/#block_plans">{{ $t("header.plans") }}</router-link></li>
+              <li><a href="https://apps.apple.com/us/app/robocleaner/id1603385704" class="download check_download_link">{{ $t("header.download") }}</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -37,6 +61,7 @@ export default {
   },
   data() {
     return {
+      isOpenMobileMenu: false,
       screenWidth: 0,
     };
   },
@@ -112,21 +137,52 @@ header
       border-radius: 8px
       padding: 11px 20px
 
+.header-mobile
+  display: table
+  padding: 10px 15px 0 15px
+  width: 100%
+  > div
+    display: table-cell
+    width: 50%
+    vertical-align: top
+  .logo
+    display: table-cell
+    padding-top: 10px
+    padding-bottom: 15px
+    img
+      height: 30px
+  .navbar
+    height: 56px
+  button
+    position: absolute
+    right: 0
+    &:focus
+      outline: none
+  ul
+    font-size: 17px
+    list-style: none
+    padding-right: 0
+
 @media (max-width: 992px)
   .header-desktop
     .logo
       font-size: 14px
-    li
+    .top-menu li
       font-size: 14px
       a
         padding: 12px
+      .long-a
+        padding: 5px 12px
 
 @media (max-width: 768px)
   header
-    height: 77px
+    height: auto
 
 @media (max-width: 575px)
   header
-    height: 64px
+    padding-top: 5px
+
+  .header-mobile .logo img
+      padding-right: 6px
 
 </style>

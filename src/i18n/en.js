@@ -6,6 +6,14 @@ const translate = {
         subscribe: "Subscribe",
         why_robo_cleaner: "Why RoboCleaner",
     },
+    footer: {
+        title: "Our Products",
+        desc: "The best iOS ad blocker for Safari browser. AdBlocker is able to eliminate all kinds of ads in Safari, protect your privacy, and reduce page loading times.",
+        icon_1: "Block websites with suspicious materials",
+        icon_2: "No more distracting ads",
+        icon_3: "Save battery life with blocker",
+        icon_4: "Block websites with malware",
+    },
     menu: {
         contact: "Contact",
         home: "Home",
