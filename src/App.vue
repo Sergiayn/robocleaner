@@ -26,6 +26,9 @@ body
   font-family: 'Nunito', sans-serif
   margin: 0
 
+.bg_blue
+  background: rgba(163, 195, 255, 0.1)
+
 .main
   margin-top: 95px
 

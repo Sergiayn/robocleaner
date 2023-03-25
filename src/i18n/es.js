@@ -20,6 +20,24 @@ const translate = {
         privacy: "Privacidad",
         terms_of_use: "Condiciones de uso"
     },
+    block_why_robo: {
+        title_1: "Limpieza de medios y contactos",
+        title_2: "Compresor de fotos y videos",
+        title_3: "Prueba de velocidad de Internet",
+        title_4: "Favoritos",
+        title_5: "Vida de la batería",
+        title_6: "Eliminación de eventos en el Calendario",
+        title_7: "Limpieza de la caché de Safari",
+        title_8: "Bloqueador de Anuncios",
+        desc_1: "La mayoría de los limpiadores manejan bien esta tarea, ya que esta es la función principal de este tipo de aplicación.",
+        desc_2: "Una función importante como esta es imprescindible para el limpiador móvil, ya que con su ayuda puedes reducir la memoria de tus fotos y videos.",
+        desc_3: "Comprobemos juntos cuánta velocidad de Internet satisface tus necesidades de uso.",
+        desc_4: "Esta función te permite extraer las fotos que has agregado a \"Favoritos\" de la galería de tu teléfono.",
+        desc_5: "Te permitimos, como usuario, revisar la carga de tu teléfono y su capacidad.",
+        desc_6: "Ayuda a limpiar el teléfono de eventos irrelevantes, al mismo tiempo que libera el dispositivo de \"basura\".",
+        desc_7: "Te mostraremos cómo hacerlo y aumentar la memoria del teléfono.",
+        desc_8: "Estamos agregando una función importante, porque ¿quién no querría \"navegar por Internet\" sin anuncios y ventanas emergentes?",
+    },
     page_contact: {
         title: "¡Nos encantaría saber de ti!",
         desc: "Ya sea que tengas una pregunta sobre funciones, prueba, precios o cualquier otra cosa, nuestro equipo está listo para responder a todas tus preguntas."
