@@ -48,4 +48,44 @@ export default {
     font-size: 26px
     padding: 10px 35px
     text-decoration: none
+
+@media (max-width: 1200px)
+  .block-contact
+    padding: 200px 0
+    .img-block img
+      max-width: 130px
+    .title
+      font-size: 30px
+    .desc
+      font-size: 18px
+    .button
+      font-size: 22px
+
+@media (max-width: 991px)
+  .block-contact
+    padding: 190px 0
+    .img-block img
+      max-width: 120px
+    .title
+      font-size: 28px
+    .desc
+      font-size: 16px
+    .button
+      font-size: 14px
+
+@media (max-width: 575px)
+  .block-contact
+    padding: 50px 0
+    .img-block
+      padding-bottom: 15px
+      text-align: center
+    .img-block img
+      max-width: 50px
+    .title
+      font-size: 18px
+    .desc
+      font-size: 15px
+    .button
+      font-size: 13px
+
 </style>
