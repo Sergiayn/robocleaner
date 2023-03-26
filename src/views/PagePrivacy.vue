@@ -48,7 +48,7 @@
 
         <div class="title">{{ $t("page_privacy.middle_content_title_7") }}</div>
         <div class="rubric" v-html='$t("page_privacy.middle_content_rubric_19")'></div>
-        <div class="rubric" v-html='$t("page_privacy.middle_content_rubric_20")'></div>
+        <div class="rubric" v-html='$t("page_privacy.middle_content_rubric_20") + "<div>" + $t("page_privacy.by_email") + ": yavorsky.team@gmail.com</div>"'></div>
       </div>
     </div>
 

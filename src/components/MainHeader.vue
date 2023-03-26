@@ -56,9 +56,6 @@
 <script>
 export default {
   name: "MainHeader",
-  components: {
-
-  },
   data() {
     return {
       isOpenMobileMenu: false,
@@ -88,9 +85,9 @@ a
 
 header
   background: linear-gradient(89.91deg, #8080E5 -1.36%, #828EE5 11.92%, #849CE4 31.66%, #86AAE4 50.1%, #88B8E4 71.71%, #8AC6E3 88.38%, #8CD4E3 103.19%)
-  -webkit-box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
-  -moz-box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
-  box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
+  //-webkit-box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
+  //-moz-box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
+  //box-shadow: 0 5px 20px 0 rgba(119,119,119,1)
   overflow: hidden
   position: fixed
   top: 0

@@ -20,7 +20,25 @@ const translate = {
         privacy: "Privacy",
         terms_of_use: "Terms of use"
     },
+    block_home_banner: {
+        title: "ROBOCLEANER<br>SIMPLIFY YOUR iOS LIFE!",
+        desc: "With this application you will tidy up your iPhone",
+        feature_item_1: "Quick clean up phone",
+        feature_item_2: "AdBlocker",
+        feature_item_3: "Cleaning events in calendar",
+        feature_item_4: "Deleting Safari cache",
+        feature_item_5: "Photos & videos compressing",
+        feature_item_6: "Battery life",
+        feature_title: "More than phone cleaner",
+        feature_desc: "With this app, you can clean up duplicated photos, merge contacts and clean up your phone book, compress photos and videos, and know important things about your phone such as memory details, Internet speed, and much more (see below what great features you will get along with our cleaner)."
+    },
     block_why_robo: {
+        table_col_1: "Why exactly RoboCleaner?",
+        table_col_2: "Сommon solutions",
+        table_col_3: "RoboCleaner",
+        good: "Good",
+        average: "Average",
+        no: "No",
         title_1: "Cleaning media and contacts",
         title_2: "Photo & video compressor",
         title_3: "Internet speed testing",
@@ -133,8 +151,7 @@ const translate = {
             "<p>We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the \"effective date\" at the top of this Privacy Policy.</p>\n" +
             "<p>You are advised to review this Privacy Policy periodically for any changes. Changes to this</p>\n" +
             "<span>Privacy Policy are effective when they are posted on this page.</span>",
-        middle_content_rubric_20: "<div>If you have any questions about this Privacy Policy, please contact us:</div>\n" +
-            "<div>By email: yavorsky.team@gmail.com</div>",
+        middle_content_rubric_20: "<div>If you have any questions about this Privacy Policy, please contact us:</div>",
         middle_content_title_1: "Information Collection And Use",
         middle_content_title_2: "Types of Data Collected",
         middle_content_title_3: "Use Of Data",
@@ -142,6 +159,7 @@ const translate = {
         middle_content_title_5: "Links To Other Sites",
         middle_content_title_6: "Children`s Privacy",
         middle_content_title_7: "Changes To This Privacy Policy",
+        by_email: 'By email'
     }
 }
 export default translate

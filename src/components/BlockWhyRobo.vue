@@ -5,18 +5,18 @@
         <table v-if="screenWidth > 576">
           <tbody>
           <tr>
-            <th><strong>Why exactly RoboCleaner?</strong></th>
+            <th><strong>{{ $t("block_why_robo.table_col_1") }}</strong></th>
             <th>
               <div class="img">
-                <img src="@/assets/img/block-why-robo/col1.png" alt="">
+                <img src="@/assets/img/block-why-robo/col1.png" :alt='$t("block_why_robo.table_col_2")'>
               </div>
-              <span>Сommon solutions</span>
+              <span>{{ $t("block_why_robo.table_col_2") }}</span>
             </th>
             <th>
               <div class="img">
-                <img src="@/assets/img/block-why-robo/col2.png" alt="">
+                <img src="@/assets/img/block-why-robo/col2.png" :alt='$t("block_why_robo.table_col_3")'>
               </div>
-              <span>RoboCleaner</span>
+              <span>{{ $t("block_why_robo.table_col_3") }}</span>
             </th>
           </tr>
           <tr v-for="(item, index) in items" :key="index">
@@ -25,20 +25,20 @@
               <p>{{ $t("block_why_robo." + item.desc) }}</p>
             </td>
             <td>
-              <span class="status-success" v-if="item.param_1 === 1">Good</span>
-              <span class="status-warn" v-else-if="item.param_1 === 2">Average</span>
-              <span class="status-error" v-else-if="item.param_1 === 3">No</span>
+              <span class="status-success" v-if="item.param_1 === 1">{{ $t("block_why_robo.good") }}</span>
+              <span class="status-warn" v-else-if="item.param_1 === 2">{{ $t("block_why_robo.average") }}</span>
+              <span class="status-error" v-else-if="item.param_1 === 3">{{ $t("block_why_robo.no") }}</span>
             </td>
             <td>
-              <span class="status-success" v-if="item.param_2 === 1">Good</span>
-              <span class="status-warn" v-else-if="item.param_2 === 2">Average</span>
-              <span class="status-error" v-else-if="item.param_2 === 3">No</span>
+              <span class="status-success" v-if="item.param_2 === 1">{{ $t("block_why_robo.good") }}</span>
+              <span class="status-warn" v-else-if="item.param_2 === 2">{{ $t("block_why_robo.average") }}</span>
+              <span class="status-error" v-else-if="item.param_2 === 3">{{ $t("block_why_robo.no") }}</span>
             </td>
           </tr>
           </tbody>
         </table>
         <div class="mobile-block" v-else>
-          <div class="title">Why exactly RoboCleaner?</div>
+          <div class="title">{{ $t("block_why_robo.table_col_1") }}</div>
           <carousel :items-to-show="1" :autoplay="5000">
             <slide v-for="(item, index) in items" :key="index">
               <div class="slide-row">
@@ -49,25 +49,25 @@
                 <div class="row">
                   <div class="col-6">
                     <div class="img">
-                      <img src="@/assets/img/block-why-robo/col1.png" alt="Сommon solutions">
+                      <img src="@/assets/img/block-why-robo/col1.png" :alt='$t("block_why_robo.table_col_2")'>
                     </div>
-                    <span>Сommon solutions</span>
+                    <span>{{ $t("block_why_robo.table_col_2") }}</span>
                   </div>
                   <div class="col-6">
                     <div class="img">
-                      <img src="@/assets/img/block-why-robo/col2.png" alt="RoboCleaner">
+                      <img src="@/assets/img/block-why-robo/col2.png" :alt='$t("block_why_robo.table_col_2")'>
                     </div>
-                    <span>RoboCleaner</span>
+                    <span>{{ $t("block_why_robo.table_col_3") }}</span>
                   </div>
                   <div class="col-6">
-                    <span class="status-success" v-if="item.param_1 === 1">Good</span>
-                    <span class="status-warn" v-else-if="item.param_1 === 2">Average</span>
-                    <span class="status-error" v-else-if="item.param_1 === 3">No</span>
+                    <span class="status-success" v-if="item.param_1 === 1">{{ $t("block_why_robo.good") }}</span>
+                    <span class="status-warn" v-else-if="item.param_1 === 2">{{ $t("block_why_robo.average") }}</span>
+                    <span class="status-error" v-else-if="item.param_1 === 3">{{ $t("block_why_robo.no") }}</span>
                   </div>
                   <div class="col-6">
-                    <span class="status-success" v-if="item.param_2 === 1">Good</span>
-                    <span class="status-warn" v-else-if="item.param_2 === 2">Average</span>
-                    <span class="status-error" v-else-if="item.param_2 === 3">No</span>
+                    <span class="status-success" v-if="item.param_2 === 1">{{ $t("block_why_robo.good") }}</span>
+                    <span class="status-warn" v-else-if="item.param_2 === 2">{{ $t("block_why_robo.average") }}</span>
+                    <span class="status-error" v-else-if="item.param_2 === 3">{{ $t("block_why_robo.no") }}</span>
                   </div>
                 </div>
               </div>

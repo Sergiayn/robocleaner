@@ -20,7 +20,25 @@ const translate = {
         privacy: "Privacidad",
         terms_of_use: "Condiciones de uso"
     },
+    block_home_banner: {
+        title: "¡ROBOCLEANER<br>SIMPLIFICA TU VIDA iOS!",
+        desc: "Con esta aplicación, podrás ordenar tu iPhone",
+        feature_item_1: "Limpieza rápida del teléfono",
+        feature_item_2: "Bloqueador de Anuncios",
+        feature_item_3: "Limpieza de eventos en el calendario",
+        feature_item_4: "Eliminando la caché de Safari",
+        feature_item_5: "Compresión de fotos y videos",
+        feature_item_6: "Vida de la batería",
+        feature_title: "Más que un limpiador de teléfono",
+        feature_desc: "Con esta aplicación, podrás limpiar fotos duplicadas, unir contactos y limpiar tu libreta de direcciones, comprimir fotos y videos, y conocer detalles importantes sobre tu teléfono como los detalles de memoria, la velocidad de internet y mucho más (mira a continuación las excelentes características que obtendrás junto con nuestro limpiador)."
+    },
     block_why_robo: {
+        table_col_1: "¿Por qué exactamente RoboCleaner?",
+        table_col_2: "Soluciones comunes",
+        table_col_3: "RoboCleaner",
+        good: "Bueno",
+        average: "Promedio",
+        no: "No",
         title_1: "Limpieza de medios y contactos",
         title_2: "Compresor de fotos y videos",
         title_3: "Prueba de velocidad de Internet",
@@ -128,8 +146,7 @@ const translate = {
             "<p>Le informaremos por correo electrónico y/o con un aviso destacado en nuestro Servicio, antes de que el cambio entre en vigor y actualizaremos la \"fecha efectiva\" en la parte superior de esta Política de Privacidad.</p>\n" +
             "<p>Se recomienda revisar periódicamente esta Política de Privacidad para cualquier cambio.</p>\n" +
             "<span>Los cambios en esta Política de Privacidad son efectivos cuando se publican en esta página.</span>",
-        middle_content_rubric_20: "<div>Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos:</div>\n" +
-            "<div>Por correo electrónico: yavorsky.team@gmail.com</div>",
+        middle_content_rubric_20: "<div>Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos:</div>",
         middle_content_title_1: "Recopilación y uso de información",
         middle_content_title_2: "Tipos de datos recopilados",
         middle_content_title_3: "Uso de datos",
@@ -137,6 +154,7 @@ const translate = {
         middle_content_title_5: "Enlaces a Otros Sitios",
         middle_content_title_6: "Privacidad de los niños",
         middle_content_title_7: "Cambios en esta Política de Privacidad",
+        by_email: 'Por correo electrónico'
     }
 }
 export default translate
