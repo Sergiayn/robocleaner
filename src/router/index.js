@@ -35,6 +35,9 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    scrollBehavior (to) {
+        return to.hash === '' ? { top: 0 } : {el: to.hash,top: 70}
+    }
 });
 
 export default router;

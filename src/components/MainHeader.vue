@@ -40,10 +40,10 @@
           </nav>
           <div class="collapse" :class="{show:isOpenMobileMenu}">
             <ul>
-              <li><router-link to="/#block_screenshots">{{ $t("header.screenshots") }}</router-link></li>
-              <li><router-link to="/#block_why_robo_cleaner">{{ $t("header.why_robo_cleaner") }}</router-link></li>
-              <li><router-link to="/#block_subscribe">{{ $t("header.subscribe") }}</router-link></li>
-              <li><router-link to="/#block_plans">{{ $t("header.plans") }}</router-link></li>
+              <li @click="isOpenMobileMenu = false"><router-link to="/#block_screenshots">{{ $t("header.screenshots") }}</router-link></li>
+              <li @click="isOpenMobileMenu = false"><router-link to="/#block_why_robo_cleaner">{{ $t("header.why_robo_cleaner") }}</router-link></li>
+              <li @click="isOpenMobileMenu = false"><router-link to="/#block_subscribe">{{ $t("header.subscribe") }}</router-link></li>
+              <li @click="isOpenMobileMenu = false"><router-link to="/#block_plans">{{ $t("header.plans") }}</router-link></li>
               <li><a href="https://apps.apple.com/us/app/robocleaner/id1603385704" class="download check_download_link">{{ $t("header.download") }}</a></li>
             </ul>
           </div>
