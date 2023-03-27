@@ -62,6 +62,24 @@ const translate = {
         email: "Correo electrónico",
         subscribe: "Suscribirse"
     },
+    block_benefits: {
+        benefits: "BENEFICIOS",
+        free: "GRATUITO",
+        professional: "PROFESIONAL",
+        title_1: "Limpieza rápida",
+        title_2: "Compresión de fotos y videos",
+        title_3: "Verificación del estado de la memoria",
+        title_4: "Prueba de velocidad",
+        title_5: "Bloqueador de Anuncios",
+        title_6: "Duración de la batería",
+        title_7: "Ahorro de espacio ilimitado",
+        title_8: "Limpieza de duplicados",
+        title_9: "Eliminación ilimitada de fotos inútiles",
+        title_10: "Limpieza de caché",
+        title_11: "Unión de eventos",
+        title_12: "Unión de fotos y videos favoritos",
+        download_brief: "¡Prueba RoboCleaner ahora y obtén una prueba gratuita de 7 días!"
+    },
     page_contact: {
         title: "¡Nos encantaría saber de ti!",
         desc: "Ya sea que tengas una pregunta sobre funciones, prueba, precios o cualquier otra cosa, nuestro equipo está listo para responder a todas tus preguntas."

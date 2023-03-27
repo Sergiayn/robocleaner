@@ -62,6 +62,24 @@ const translate = {
         email: "Email",
         subscribe: "Subscribe"
     },
+    block_benefits: {
+        benefits: "BENEFITS",
+        free: "FREE",
+        professional: "PROFESSIONAL",
+        title_1: "Fast Cleaning",
+        title_2: "Compress photos & videos",
+        title_3: "Checking memory status",
+        title_4: "Speed test",
+        title_5: "AdBlocker",
+        title_6: "Battery life",
+        title_7: "Unlimited space saving",
+        title_8: "Cleaning duplicates",
+        title_9: "Unlimited delition  of useless photos",
+        title_10: "Cache cleaning",
+        title_11: "Merging event",
+        title_12: "Merging favorite photos & videos",
+        download_brief: "Try RoboCleaner now and get 7-day free trial!"
+    },
     page_contact: {
         title: "We`d love to hear from you!",
         desc: "Whether you have a question about features, trial, pricing, or anything else, our team is ready to answer all your questions."

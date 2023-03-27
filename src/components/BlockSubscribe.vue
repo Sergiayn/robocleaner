@@ -46,7 +46,7 @@ export default {
 }
 </script>
 
-<style scoped lang="sass">
+<style lang="sass">
 
 .block-subscribe
   .link_app
@@ -112,5 +112,20 @@ export default {
       float: right
     .desc, form
       font-size: 20px
+    .title
+      font-size: 28px
+
+@media (max-width: 575px)
+  .block-subscribe-inner
+    padding: 30px 0 0
+    .link_app
+      padding-top: 40px
+    .title
+      font-size: 22px
+    .desc, form
+      font-size: 17px
+    .form
+      margin-bottom: 0
+
 
 </style>
