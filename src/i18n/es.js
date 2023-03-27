@@ -56,6 +56,12 @@ const translate = {
         desc_7: "Te mostraremos cómo hacerlo y aumentar la memoria del teléfono.",
         desc_8: "Estamos agregando una función importante, porque ¿quién no querría \"navegar por Internet\" sin anuncios y ventanas emergentes?",
     },
+    block_subscribe: {
+        title: "Suscríbete a las noticias de RoboCleaner",
+        desc: "Sé el primero en obtener las últimas noticias sobre lanzamientos de productos de RoboCleaner y más.",
+        email: "Correo electrónico",
+        subscribe: "Suscribirse"
+    },
     page_contact: {
         title: "¡Nos encantaría saber de ti!",
         desc: "Ya sea que tengas una pregunta sobre funciones, prueba, precios o cualquier otra cosa, nuestro equipo está listo para responder a todas tus preguntas."
