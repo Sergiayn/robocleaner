@@ -32,6 +32,10 @@ const translate = {
         feature_title: "Más que un limpiador de teléfono",
         feature_desc: "Con esta aplicación, podrás limpiar fotos duplicadas, unir contactos y limpiar tu libreta de direcciones, comprimir fotos y videos, y conocer detalles importantes sobre tu teléfono como los detalles de memoria, la velocidad de internet y mucho más (mira a continuación las excelentes características que obtendrás junto con nuestro limpiador)."
     },
+    block_screenshots:{
+        title: "Capturas de pantalla de RoboCleaner",
+        desc: "Porque una imagen vale más que mil palabras",
+    },
     block_why_robo: {
         table_col_1: "¿Por qué exactamente RoboCleaner?",
         table_col_2: "Soluciones comunes",
@@ -63,6 +67,11 @@ const translate = {
         subscribe: "Suscribirse"
     },
     block_benefits: {
+        item_1: "Ahorro de espacio ilimitado",
+        item_2: "Eliminación ilimitada de fotos inútiles",
+        item_3: "Compresión de fotos y videos",
+        item_4: "Detección automática de contactos inútiles",
+        item_5: "Eliminación ilimitada de videos grandes",
         benefits: "BENEFICIOS",
         free: "GRATUITO",
         professional: "PROFESIONAL",

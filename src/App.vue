@@ -41,12 +41,23 @@ body
   height: 30px
   width: 40px
 
+.carousel__pagination
+  padding-left: 0
+.carousel .carousel__pagination-button::after
+  background: #262626
+  border-radius: 50%
+  height: 6px
+  opacity: .5
+  width: 6px
+.carousel .carousel__pagination-button--active::after
+  opacity: 1
+
 .main
   margin-top: 95px
 
 @media (max-width: 768px)
   .main
-    margin-top: 77px
+    margin-top: 66px
   .icon
     background-size: 30px 30px
     height: 30px

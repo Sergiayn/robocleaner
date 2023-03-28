@@ -32,6 +32,10 @@ const translate = {
         feature_title: "More than phone cleaner",
         feature_desc: "With this app, you can clean up duplicated photos, merge contacts and clean up your phone book, compress photos and videos, and know important things about your phone such as memory details, Internet speed, and much more (see below what great features you will get along with our cleaner)."
     },
+    block_screenshots:{
+        title: "RoboCleaner screenshots",
+        desc: "Because a picture is worth a thousand words",
+    },
     block_why_robo: {
         table_col_1: "Why exactly RoboCleaner?",
         table_col_2: "Сommon solutions",
@@ -63,6 +67,11 @@ const translate = {
         subscribe: "Subscribe"
     },
     block_benefits: {
+        item_1: "Saving unlimited space",
+        item_2: "Unlimited remove useless photos",
+        item_3: "Compress photos & videos",
+        item_4: "Auto detect useless contacts",
+        item_5: "Unlimited remove large videos",
         benefits: "BENEFITS",
         free: "FREE",
         professional: "PROFESSIONAL",

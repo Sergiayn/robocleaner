@@ -210,14 +210,6 @@ export default {
     .carousel__pagination
       padding-bottom: 16px
       margin-top: 0
-    .carousel__pagination-button::after
-      background: #262626
-      border-radius: 50%
-      height: 6px
-      opacity: .5
-      width: 6px
-    .carousel__pagination-button.carousel__pagination-button--active::after
-        opacity: 1
     .carousel__prev, .carousel__next
       display: none
 
