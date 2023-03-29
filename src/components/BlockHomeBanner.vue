@@ -7,7 +7,7 @@
             <div class="banner">
               <h2 v-html='$t("block_home_banner.title")'></h2>
               <h4 v-html='$t("block_home_banner.desc")'></h4>
-              <block-link-app :sizes="{1200:1,990:1}"></block-link-app>
+              <block-link-app :sizes="{1200:1,992:0, 768:0, 576:0}"></block-link-app>
               <div class="bg_iphone"> </div>
             </div>
           </div>
@@ -49,7 +49,7 @@
       <div class="block-about-inner">
         <div class="title">{{$t("block_home_banner.feature_title")}}</div>
         <p>{{$t("block_home_banner.feature_desc")}}</p>
-        <block-link-app></block-link-app>
+        <block-link-app :sizes="{1200:1,992:0, 768:0, 576:0}"></block-link-app>
       </div>
     </div>
   </div>
