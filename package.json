@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "usemodal-vue3": "^0.3.7",
     "vue": "^3.2.13",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.0.13",
-    "vue3-carousel": "^0.2.14"
+    "vue3-carousel": "^0.2.14",
+    "vue3-cookies": "^1.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

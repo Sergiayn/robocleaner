@@ -4,9 +4,11 @@
     <RouterView />
   </div>
   <main-footer></main-footer>
+  <cookie-agreement></cookie-agreement>
 </template>
 
 <script>
+import CookieAgreement from "@/components/CookieAgreement.vue";
 import MainFooter from "@/components/MainFooter.vue";
 import MainHeader from "@/components/MainHeader.vue";
 import {RouterView} from "vue-router";
@@ -14,6 +16,7 @@ import {RouterView} from "vue-router";
 export default {
   name: 'App',
   components: {
+    CookieAgreement,
     MainFooter,
     MainHeader,
     RouterView
@@ -41,6 +44,11 @@ body
   height: 30px
   width: 40px
 
+.modal-vue3-content
+    border-radius: 16px!important
+    max-width: 75%
+    width: 880px!important
+
 .carousel__pagination
   padding-left: 0
 .carousel .carousel__pagination-button::after
@@ -66,5 +74,6 @@ body
 @media (max-width: 575px)
   .main
     margin-top: 64px
-
+  .modal-vue3-content
+    max-width: 97%
 </style>
