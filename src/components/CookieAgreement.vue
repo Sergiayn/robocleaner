@@ -35,7 +35,7 @@ export default {
   methods: {
     closeModal() {
       this.isVisible = false
-      this.cookies.set("coolie_is_accept", "1")
+      this.cookies.set("coolie_is_accept", "1",'365d')
     }
   }
 }

@@ -68,6 +68,8 @@ export default {
         font-size: 18px
         padding-top: 14px
         text-align: center
+      &:nth-last-child(2)
+        padding-top: 200px
       &:nth-last-child(5), &:nth-last-child(4)
         width: 49%
       &:nth-last-child(5) .item-inner, &:nth-last-child(3) .item-inner, &:nth-last-child(2) .item-inner

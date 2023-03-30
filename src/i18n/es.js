@@ -26,7 +26,7 @@ const translate = {
         feature_item_1: "Limpieza rápida del teléfono",
         feature_item_2: "Bloqueador de Anuncios",
         feature_item_3: "Limpieza de eventos en el calendario",
-        feature_item_4: "Eliminando la caché de Safari",
+        feature_item_4: "Revisando detalles de la memoria",
         feature_item_5: "Compresión de fotos y videos",
         feature_item_6: "Vida de la batería",
         feature_title: "Más que un limpiador de teléfono",

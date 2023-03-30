@@ -1,5 +1,4 @@
 <template>
-  <change-language></change-language>
   <footer>
     <div class="container">
       <div class="footer-inner">
@@ -60,14 +59,12 @@
 </template>
 
 <script>
-import ChangeLanguage from "@/components/ChangeLanguage.vue"
 import BlockLinkApp from "@/components/BlockLinkApp.vue"
 import {RouterLink} from "vue-router"
 
 export default {
   name: "MainFooter",
   components: {
-    ChangeLanguage,
     BlockLinkApp,
     RouterLink
   }

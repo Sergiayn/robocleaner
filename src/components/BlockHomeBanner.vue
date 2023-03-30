@@ -200,10 +200,6 @@ export default {
     padding-right: 100px
     text-align: center
 
-@media (max-width: 1800px)
-  .main-top-bg
-    background-size: 164px 101px, 204px 197px, 102px 157px, 308px 298px, 145px 140px, 75px 101px, 550px
-
 @media (max-width: 1700px)
   .bg_iphone
     height: 600px
