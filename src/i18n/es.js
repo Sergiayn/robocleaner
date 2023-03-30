@@ -1,4 +1,8 @@
 const translate = {
+    common: {
+        scan_qr_code: 'Scan QR code',
+        download_on_the: 'Descárgalo en el'
+    },
     header: {
         download: "Descargar",
         plans: "Planes",

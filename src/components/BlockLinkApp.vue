@@ -1,14 +1,13 @@
 <template>
   <div class="link_app"
-       :class="{isFooter: footer,
-       b_inline: positionBlock.value === 'b-inline',
-       b_block: positionBlock.value === 'b-block'}">
+       :class="{isFooter: footer}">
     <a :href="'https://apps.apple.com/us/app/' + (typeProd === 0 ? 'robocleaner/id1603385704' : 'adblocker-protection/id1587657245')"
        class="link_app_store check_download_link">
-      <img src="@/assets/img/app_store.png" alt="app store">
+      <span class="row_1">{{ $t("common.download_on_the") }}</span>
+      <span class="row_2">App store</span>
     </a>
     <a href="https://track-voluum.robocleaner.galaxys.info/click" class="link_app_store_qr" @click.prevent="isVisible = true">
-      <img src="@/assets/img/bg/qr-icon.svg" alt="qr code"> Scan QR code
+      <img src="@/assets/img/bg/qr-icon.svg" alt="qr code"> {{ $t("common.scan_qr_code") }}
     </a>
   </div>
   <Modal v-model:visible="isVisible"
@@ -25,40 +24,18 @@ import {ref} from "vue";
 export default {
   name: "BlockLinkApp",
   props:{
-    sizes: Object,
     footer: {
       type: Boolean,
       default(){
         return false
       }
-    },
-    typeProd: {
-      type: Number,
-      default(){
-        return 0
-      }
     }
   },
   data() {
     let isVisible = ref(false)
-    let pSizes = ref({})
     let screenWidth = ref(0)
-    let positionBlock = ref('b-inline')
-
-    if (undefined === this.sizes) {
-      pSizes = {576:0,768:1,992:1,1200:1}
-    } else {
-      pSizes.value[576] = !(576 in this.sizes) ? 0 : this.sizes[576]
-      pSizes.value[768] = !(768 in this.sizes) ? 1 : this.sizes[768]
-      pSizes.value[992] = !(992 in this.sizes) ? 1 : this.sizes[992]
-      pSizes.value[1200] = !(1200 in this.sizes) ? 1 : this.sizes[1200]
-    }
-
-    this.updatePosition()
 
     return {
-      positionBlock,
-      pSizes,
       isVisible,
       screenWidth
     };
@@ -70,23 +47,11 @@ export default {
   methods: {
     onScreenResize() {
       window.addEventListener("resize", () => {
-        this.updateScreenWidth();
-        this.updatePosition()
+        this.updateScreenWidth()
       });
     },
     updateScreenWidth() {
       this.screenWidth = window.innerWidth;
-    },
-    updatePosition() {
-      if (this.pSizes === undefined)
-        return
-
-      for (let value of Object.entries(this.pSizes)) {
-        if (this.screenWidth < value[0]) {
-          this.positionBlock = value[1] ? 'b-inline' : 'b-block'
-          break
-        }
-      }
     }
   },
   components: {
@@ -120,7 +85,36 @@ export default {
     height: 100%
   .link_app_store
     background-color: black
+    background-repeat: no-repeat
+    background-position: 18px center
+    background-size: auto 60%
+    background-image: url("@/assets/img/apple.svg")
+    padding-left: 50px
     text-align: center
+    span
+      display: block
+      color: white
+      font-weight: 500
+    .row_1
+      font-size: 14px
+      line-height: 1.4
+    .row_2
+      font-size: 26px
+      line-height: 1.1
+  &.isFooter
+    .link_app_store
+      background-position: 8px center
+      padding-left: 22px
+      padding-top: 2px
+      text-align: center
+      span
+        font-weight: 400
+      .row_1
+        font-size: 7px
+        line-height: 1.4
+      .row_2
+        font-size: 11px
+        line-height: 1.1
 
 .link_app_store_qr
   font-size: 21px
@@ -157,6 +151,13 @@ export default {
       width: 140px
       &:first-child
         margin-right: 16px
+    .link_app_store
+      background-position: 10px center
+      padding-left: 30px
+      .row_1
+        font-size: 12px
+      .row_2
+        font-size: 20px
 
 @media (max-width: 992px)
   .link_app_store_qr, .link_app_store_qr:hover, .link_app_store_qr:active
@@ -175,6 +176,14 @@ export default {
     .link_app_store_qr
       font-size: 15px
       padding-right: 0
+    .link_app_store
+      background-position: 5px center
+      padding-left: 20px
+      padding-top: 2px
+      .row_1
+        font-size: 11px
+      .row_2
+        font-size: 18px
 
 @media (max-width: 575px)
   .link_app
@@ -184,5 +193,13 @@ export default {
       width: 110px
     .link_app_store_qr
       font-size: 10px
+    .link_app_store
+      background-position: 7px center
+      padding-left: 14px
+      padding-top: 0
+      .row_1
+        font-size: 8px
+      .row_2
+        font-size: 14px
 
 </style>
