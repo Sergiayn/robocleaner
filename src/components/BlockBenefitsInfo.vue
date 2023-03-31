@@ -49,7 +49,7 @@
   </div>
   <div class="block-download-buttons">
     <div class="block-download-buttons-inner">
-      <block-link-app :sizes="{1200:1,992:1, 768:1, 576:0}"></block-link-app>
+      <block-link-app></block-link-app>
       <p>{{ $t("block_benefits.download_brief") }}</p>
     </div>
   </div>

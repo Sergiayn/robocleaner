@@ -14,7 +14,7 @@
             <div class="desc">{{ $t("footer.desc") }}</div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-            <block-link-app :type-prod="2" :sizes="{1200:1,992:1, 768:0, 576:1}" :footer="true"></block-link-app>
+            <block-link-app :type-prod="2" :footer="true"></block-link-app>
           </div>
         </div>
 

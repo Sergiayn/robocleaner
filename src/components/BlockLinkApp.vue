@@ -118,11 +118,11 @@ export default {
 
 .link_app_store_qr
   font-size: 21px
+  padding: 17px
 .link_app_store_qr, .link_app_store_qr:hover, .link_app_store_qr:active
   background-color: rgba(239, 239, 239, 1)
   color: black!important
   line-height: 22px
-  padding: 17px
 
 .modalLinkApp
   color: black

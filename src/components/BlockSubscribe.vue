@@ -1,7 +1,7 @@
 <template>
   <div class="block-subscribe" id="block_subscribe">
     <div class="container">
-      <block-link-app :sizes="{1200:1,992:1, 768:1, 576:1}"></block-link-app>
+      <block-link-app></block-link-app>
       <div class="block-subscribe-inner">
         <div class="title">{{ $t("block_subscribe.title") }}</div>
         <div class="desc">{{ $t("block_subscribe.desc") }}</div>
