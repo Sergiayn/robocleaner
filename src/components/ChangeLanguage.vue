@@ -11,12 +11,12 @@
 export default {
   name: 'ChangeLanguage',
   data () {
-    this.$i18n.locale = 'en';
-    return { locale: 'en' }
+    return { locale: this.$i18n.locale }
   },
   watch: {
-    locale (val) {
-      this.$i18n.locale = val
+    locale (locale) {
+      this.$i18n.locale = locale
+      this.$router.replace({params:{locale}})
     }
   }
 }

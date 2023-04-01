@@ -45,9 +45,9 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12">
               <div class="sub_menu">
                 <ul>
-                  <li><router-link to="/terms-of-use">{{ $t("menu.terms_of_use") }}</router-link></li>
-                  <li><router-link to="/privacy">{{ $t("menu.privacy") }}</router-link></li>
-                  <li><router-link to="/contact">{{ $t("menu.contact") }}</router-link></li>
+                  <li><router-link :to="{name: 'TermsOfUse', params:{locale:$i18n.locale}}">{{ $t("menu.terms_of_use") }}</router-link></li>
+                  <li><router-link :to="{name: 'Privacy', params:{locale:$i18n.locale}}">{{ $t("menu.privacy") }}</router-link></li>
+                  <li><router-link :to="{name: 'Contact', params:{locale:$i18n.locale}}">{{ $t("menu.contact") }}</router-link></li>
                 </ul>
               </div>
             </div>
