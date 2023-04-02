@@ -8,11 +8,15 @@
               <h2 v-html='$t("block_home_banner.title")'></h2>
               <h4 v-html='$t("block_home_banner.desc")'></h4>
               <block-link-app></block-link-app>
-              <div class="bg_iphone"> </div>
+              <div
+                  :style="{ backgroundImage: `url(${imgIphone[$i18n.locale]})`}"
+                  class="bg_iphone"> </div>
             </div>
           </div>
           <div class="col-xl-5 col-lg-5 d-none d-xl-block d-lg-block">
-            <div class="bg_iphone"> </div>
+            <div
+                :style="{ backgroundImage: `url(${imgIphone[$i18n.locale]})`}"
+                class="bg_iphone"> </div>
           </div>
         </div>
       </div>
@@ -56,8 +60,12 @@
 </template>
 
 <script>
-import BlockLinkApp from "@/components/BlockLinkApp.vue";
-import {ref} from "vue";
+import BlockLinkApp from "@/components/BlockLinkApp.vue"
+import {ref} from "vue"
+
+import imgIphone_en from "@/assets/img/lang/en/iphone.png"
+import imgIphone_es from "@/assets/img/lang/es/iphone.png"
+
 export default {
   name: "BlockHomeBanner",
   components: {
@@ -70,7 +78,11 @@ export default {
     }, 2000);
 
     return {
-      isFeatureActive
+      isFeatureActive,
+      imgIphone:{
+        en: imgIphone_en,
+        es: imgIphone_es
+      }
     };
   }
 }
@@ -78,7 +90,9 @@ export default {
 
 <style lang="sass">
 .bg_iphone
-  background: url("@/assets/img/iphones.png") no-repeat 0 center
+  background-image:
+  background-position: 0 center
+  background-repeat: no-repeat
   background-size: 650px
   display: flex
   height: 650px
@@ -116,7 +130,6 @@ export default {
       margin-right: 0
       max-width: 460px
     .bg_iphone
-      background: url("@/assets/img/iphones.png") no-repeat 0 center
       background-size: 550px
       display: none
       height: 550px
