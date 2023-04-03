@@ -1,7 +1,9 @@
 <template>
   <div class="block-benefits_info bg_blue">
     <div class="row">
-      <div class="col-xl-3"><div class="block-benefits_info__img"></div></div>
+      <div class="col-xl-3">
+        <div class="block-benefits_info__img" :style="{ backgroundImage: `url(${imgIphone[$i18n.locale]})`}"></div>
+      </div>
       <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12">
         <div class="block-benefits_info__content" id="block_plans">
           <div class="list">
@@ -57,6 +59,8 @@
 
 <script>
 import BlockLinkApp from "@/components/BlockLinkApp.vue";
+import imgIphone_en from "@/assets/img/lang/en/benefits_info/phone1.webp";
+import imgIphone_es from "@/assets/img/lang/es/benefits_info/phone1.webp";
 
 export default {
   name: "BlockBenefitsInfo",
@@ -78,22 +82,29 @@ export default {
       // {title:"title_11",col_1:false,col_2: true},
       // {title:"title_12",col_1:true,col_2: true},
     ]
-    return { items };
+    return {
+      items,
+      imgIphone:{
+        en: imgIphone_en,
+        es: imgIphone_es
+      }
+    };
   },
 }
 </script>
 
 <style scoped lang="sass">
 .block-benefits_info__img
-  background: url("@/assets/img/benefits_info/phone1.png") no-repeat center center
+  background-repeat: no-repeat
+  background-position: center center
   background-size: 280px
   /*transition: background 5s ease*/
   height: 100%
   width: 100%
-  &.active
-    background: url("@/assets/img/benefits_info/phone2.png") no-repeat center center
-    background-size: 380px
-    transition: background 5s ease
+  //&.active
+  //  background-image: url("@/assets/img/benefits_info/phone2.webp")
+  //  background-size: 380px
+  //  transition: background 5s ease
 
 .block-benefits_info
   padding: 0 70px
@@ -168,7 +179,7 @@ export default {
         border-right: 0
 
 .block-download-buttons-inner
-  background: url("@/assets/img/block-download-buttons.png") no-repeat center center
+  background: url("@/assets/img/block-download-buttons.webp") no-repeat center center
   background-size: 100%
   padding: 150px 0
   text-align: center
@@ -228,7 +239,7 @@ export default {
 
 @media (max-width: 575px)
   .block-benefits_info__content
-    background-image: url("@/assets/img/bg/stars1.png"), url("@/assets/img/bg/stars2.png")
+    background-image: url("@/assets/img/bg/stars1.webp"), url("@/assets/img/bg/stars2.webp")
     background-position: 15px 90%, 95% 15px
     background-repeat: no-repeat
     table

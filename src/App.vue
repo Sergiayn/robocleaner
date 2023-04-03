@@ -40,7 +40,7 @@ body
   width: 50px
 
 .ic-done
-  background-image: url("@/assets/img/bg/material-symbols_done-rounded.png")
+  background-image: url("@/assets/img/bg/material-symbols_done-rounded.webp")
   height: 30px
   width: 40px
 

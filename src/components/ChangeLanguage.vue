@@ -15,8 +15,9 @@ export default {
   },
   watch: {
     locale (locale) {
+      const hash = this.$router.currentRoute.value.hash
       this.$i18n.locale = locale
-      this.$router.replace({params:{locale}})
+      this.$router.replace({params:{locale},hash})
     }
   }
 }

@@ -13,8 +13,8 @@
   <Modal v-model:visible="isVisible"
          title="Scan to download"
          modalClass="modalLinkApp">
-    <img v-if="typeProd === 0" src="@/assets/img/app_store_qr_code.jpg" alt="RoboCleaner">
-    <img v-else src="@/assets/img/app_store_qr_code_addblocker.jpg" alt="AddBlocker">
+    <img v-if="typeProd === 0" src="@/assets/img/app_store_qr_code.webp" alt="RoboCleaner">
+    <img v-else src="@/assets/img/app_store_qr_code_addblocker.webp" alt="AddBlocker">
   </Modal>
 </template>
 

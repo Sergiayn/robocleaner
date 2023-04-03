@@ -8,13 +8,13 @@
             <th><strong>{{ $t("block_why_robo.table_col_1") }}</strong></th>
             <th>
               <div class="img">
-                <img src="@/assets/img/block-why-robo/col1.png" :alt='$t("block_why_robo.table_col_2")'>
+                <img src="@/assets/img/block-why-robo/col1.webp" :alt='$t("block_why_robo.table_col_2")'>
               </div>
               <span>{{ $t("block_why_robo.table_col_2") }}</span>
             </th>
             <th>
               <div class="img">
-                <img src="@/assets/img/block-why-robo/col2.png" :alt='$t("block_why_robo.table_col_3")'>
+                <img src="@/assets/img/block-why-robo/col2.webp" :alt='$t("block_why_robo.table_col_3")'>
               </div>
               <span>{{ $t("block_why_robo.table_col_3") }}</span>
             </th>
@@ -49,13 +49,13 @@
                 <div class="row">
                   <div class="col-6">
                     <div class="img">
-                      <img src="@/assets/img/block-why-robo/col1.png" :alt='$t("block_why_robo.table_col_2")'>
+                      <img src="@/assets/img/block-why-robo/col1.webp" :alt='$t("block_why_robo.table_col_2")'>
                     </div>
                     <span>{{ $t("block_why_robo.table_col_2") }}</span>
                   </div>
                   <div class="col-6">
                     <div class="img">
-                      <img src="@/assets/img/block-why-robo/col2.png" :alt='$t("block_why_robo.table_col_2")'>
+                      <img src="@/assets/img/block-why-robo/col2.webp" :alt='$t("block_why_robo.table_col_2")'>
                     </div>
                     <span>{{ $t("block_why_robo.table_col_3") }}</span>
                   </div>

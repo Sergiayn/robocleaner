@@ -2,34 +2,34 @@
   <div class="block-benefits">
     <div class="container">
       <div class="block-benefits-inner">
-        <div class="benefits_list">
+        <div class="benefits_list" :style="{ backgroundImage: `url(${imgIphone[$i18n.locale]})`}" >
           <div class="item">
             <div class="item-inner">
-              <img src="@/assets/img/benefits/icon_01.png">
+              <img src="@/assets/img/benefits/icon_01.webp" :alt='$t("block_benefits.item_1")'>
               <div class="title">{{ $t("block_benefits.item_1") }}</div>
             </div>
           </div>
           <div class="item">
             <div class="item-inner">
-              <img src="@/assets/img/benefits/icon_04.png">
+              <img src="@/assets/img/benefits/icon_04.webp" :alt='$t("block_benefits.item_4")'>
               <div class="title">{{ $t("block_benefits.item_4") }}</div>
             </div>
           </div>
           <div class="item">
             <div class="item-inner">
-              <img src="@/assets/img/benefits/icon_03.png">
+              <img src="@/assets/img/benefits/icon_03.webp" :alt='$t("block_benefits.item_3")'>
               <div class="title">{{ $t("block_benefits.item_3") }}</div>
             </div>
           </div>
           <div class="item">
             <div class="item-inner">
-              <img src="@/assets/img/benefits/icon_02.png">
+              <img src="@/assets/img/benefits/icon_02.webp" :alt='$t("block_benefits.item_2")'>
               <div class="title">{{ $t("block_benefits.item_2") }}</div>
             </div>
           </div>
           <div class="item">
             <div class="item-inner">
-              <img src="@/assets/img/benefits/icon_05.png">
+              <img src="@/assets/img/benefits/icon_05.webp" :alt='$t("block_benefits.item_5")'>
               <div class="title">{{ $t("block_benefits.item_5") }}</div>
             </div>
           </div>
@@ -40,8 +40,18 @@
 </template>
 
 <script>
+import imgIphone_en from "@/assets/img/lang/en/benefits/iphone_12_pro.webp"
+import imgIphone_es from "@/assets/img/lang/es/benefits/iphone_12_pro.webp"
 export default {
   name: "BlockBenefits",
+  data() {
+    return {
+      imgIphone:{
+        en: imgIphone_en,
+        es: imgIphone_es
+      }
+    }
+  }
 }
 </script>
 
@@ -53,7 +63,8 @@ export default {
   .title
     font-weight: 700
 .benefits_list
-    background: url("@/assets/img/benefits/iphone_12_pro.png") no-repeat center top
+  background-repeat: no-repeat
+  background-position: center top
 
 @media (min-width: 1199px)
   .benefits_list

@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
             <div class="img-block">
-              <img src="@/assets/img/block-privacy/robo.png" alt="RoboCleaner">
+              <img src="@/assets/img/block-privacy/robo.webp" alt="RoboCleaner">
             </div>
           </div>
           <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">

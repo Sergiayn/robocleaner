@@ -5,7 +5,7 @@
         <div>
           <div class="title">{{ $t("footer.title") }}</div>
           <a class="brief" href="https://apps.apple.com/us/app/adblocker-protection/id1587657245">
-            <img src="@/assets/img/footer_brief.png" alt="AdBlocker">
+            <img src="@/assets/img/footer_brief.webp" alt="AdBlocker">
             <span>AdBlocker</span>
           </a>
         </div>
@@ -24,19 +24,19 @@
               <div class="icons">
                 <ul>
                   <li>
-                    <img src="@/assets/img/footer-ico-1.png" :alt='$t("footer.icon_1")'>
+                    <img src="@/assets/img/footer-ico-1.webp" :alt='$t("footer.icon_1")'>
                     <span>{{ $t("footer.icon_1") }}</span>
                   </li>
                   <li>
-                    <img src="@/assets/img/footer-ico-2.png" :alt='$t("footer.icon_2")'>
+                    <img src="@/assets/img/footer-ico-2.webp" :alt='$t("footer.icon_2")'>
                     <span>{{ $t("footer.icon_2") }}</span>
                   </li>
                   <li>
-                    <img src="@/assets/img/footer-ico-4.png" :alt='$t("footer.icon_3")'>
+                    <img src="@/assets/img/footer-ico-4.webp" :alt='$t("footer.icon_3")'>
                     <span>{{ $t("footer.icon_3") }}</span>
                   </li>
                   <li>
-                    <img src="@/assets/img/footer-ico-3.png" :alt='$t("footer.icon_4")'>
+                    <img src="@/assets/img/footer-ico-3.webp" :alt='$t("footer.icon_4")'>
                     <span>{{ $t("footer.icon_4") }}</span>
                   </li>
                 </ul>

@@ -63,8 +63,8 @@
 import BlockLinkApp from "@/components/BlockLinkApp.vue"
 import {ref} from "vue"
 
-import imgIphone_en from "@/assets/img/lang/en/iphone.png"
-import imgIphone_es from "@/assets/img/lang/es/iphone.png"
+import imgIphone_en from "@/assets/img/lang/en/iphone.webp"
+import imgIphone_es from "@/assets/img/lang/es/iphone.webp"
 
 export default {
   name: "BlockHomeBanner",
@@ -73,9 +73,7 @@ export default {
   },
   data() {
     let isFeatureActive = ref(false)
-    setInterval(function () {
-      isFeatureActive.value = !isFeatureActive.value
-    }, 2000);
+    setInterval(function () { isFeatureActive.value = !isFeatureActive.value }, 2000);
 
     return {
       isFeatureActive,
@@ -104,7 +102,7 @@ export default {
     order: 2
 
 .main-top-bg
-  background: url("@/assets/img/bg/bg_1.png") center top no-repeat, url("@/assets/img/bg/bg_2.png") right 50% no-repeat, url("@/assets/img/bg/bg_3.png") right 40% no-repeat, url("@/assets/img/bg/bg_4.png") 45% 45% no-repeat, url("@/assets/img/bg/bg_5.png") 4% 82% no-repeat, url("@/assets/img/bg/bg_6.png") left 85% no-repeat, url("@/assets/img/bg/bg_girl_translucency2.png") 103% 0 no-repeat
+  background: url("@/assets/img/bg/bg_1.webp") center top no-repeat, url("@/assets/img/bg/bg_2.webp") right 50% no-repeat, url("@/assets/img/bg/bg_3.webp") right 40% no-repeat, url("@/assets/img/bg/bg_4.webp") 45% 45% no-repeat, url("@/assets/img/bg/bg_5.webp") 4% 82% no-repeat, url("@/assets/img/bg/bg_6.webp") left 85% no-repeat, url("@/assets/img/bg/bg_girl_translucency2.webp") 103% 0 no-repeat
   background-size: 164px 101px, 204px 197px, 102px 157px, 308px 298px, 145px 140px, 75px 101px, 640px
   padding: 0 0 40px
 
@@ -140,13 +138,13 @@ export default {
 
 .block-about
   background-color: white
-  background-image: url('@/assets/img/bg/block2_bg1_1.png'), url('@/assets/img/bg/block2_bg2.png')
+  background-image: url('@/assets/img/bg/block2_bg1_1.webp'), url('@/assets/img/bg/block2_bg2.webp')
   background-position: 77% 72%, left 78%
   background-repeat: no-repeat
   background-size: auto, 70%
   z-index: 99
   &.active
-    background-image: url('@/assets/img/bg/block2_bg1_2.png'), url('@/assets/img/bg/block2_bg2.png')
+    background-image: url('@/assets/img/bg/block2_bg1_2.webp'), url('@/assets/img/bg/block2_bg2.webp')
     background-position: right 60%, left 60%
     background-size: auto, 78%
     transition: background 0.4s step-start
@@ -170,7 +168,7 @@ export default {
       &:first-child
         margin-right: -30px
     li
-      background: url("@/assets/img/bg/feature-ic.png") no-repeat top center
+      background: url("@/assets/img/bg/feature-ic.webp") no-repeat top center
       font-size: 18px
       font-weight: 600
       display: flex
@@ -313,7 +311,7 @@ export default {
         margin-top: -70px
 
   .block-about
-    background-image: url('@/assets/img/bg/block2_bg1_1.png'), url('@/assets/img/bg/block2_bg2.png')
+    background-image: url('@/assets/img/bg/block2_bg1_1.webp'), url('@/assets/img/bg/block2_bg2.webp')
     background-position: right 65%, left 70%
     background-size: 30%, 74%
     .features
@@ -332,7 +330,7 @@ export default {
   .main-top-block
     padding: 0
   .main-top-bg
-    background: url("@/assets/img/bg/bg_girl_translucency3.png") -7% 100% no-repeat
+    background: url("@/assets/img/bg/bg_girl_translucency3.webp") -7% 100% no-repeat
     background-size: 210px
     padding: 0 0 15px
   .main-top
@@ -357,11 +355,11 @@ export default {
         margin: 5px auto!important
 
   .block-about
-    background-image: url('@/assets/img/bg/block2_bg1_1.png'), url('@/assets/img/bg/block2_bg3.png')
+    background-image: url('@/assets/img/bg/block2_bg1_1.webp'), url('@/assets/img/bg/block2_bg3.webp')
     background-position: 57% 85%, right 90%
     background-size: 30%, 60%
     &.active
-      background-image: url('@/assets/img/bg/block2_bg1_2.png'), url('@/assets/img/bg/block2_bg3.png')
+      background-image: url('@/assets/img/bg/block2_bg1_2.webp'), url('@/assets/img/bg/block2_bg3.webp')
       background-position: 50% 75%, right 85%
       background-size: 50%, 60%
     .features
