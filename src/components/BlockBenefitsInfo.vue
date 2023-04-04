@@ -93,7 +93,7 @@ export default {
 }
 </script>
 
-<style scoped lang="sass">
+<style lang="sass">
 .block-benefits_info__img
   background-repeat: no-repeat
   background-position: center center

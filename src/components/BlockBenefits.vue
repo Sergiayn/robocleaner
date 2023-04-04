@@ -2,7 +2,7 @@
   <div class="block-benefits">
     <div class="container">
       <div class="block-benefits-inner">
-        <div class="benefits_list" :style="{ backgroundImage: `url(${imgIphone[$i18n.locale]})`}" >
+        <div class="benefits_list" :style="screenWidth > 768 ? { backgroundImage: `url(${imgIphone[$i18n.locale]})`} : null" >
           <div class="item">
             <div class="item-inner">
               <img src="@/assets/img/benefits/icon_01.webp" :alt='$t("block_benefits.item_1")'>
@@ -49,9 +49,24 @@ export default {
       imgIphone:{
         en: imgIphone_en,
         es: imgIphone_es
-      }
+      },
+      screenWidth: 0,
     }
-  }
+  },
+  mounted() {
+    this.updateScreenWidth();
+    this.onScreenResize();
+  },
+  methods: {
+    onScreenResize() {
+      window.addEventListener("resize", () => {
+        this.updateScreenWidth();
+      });
+    },
+    updateScreenWidth() {
+      this.screenWidth = window.innerWidth;
+    }
+  },
 }
 </script>
 

@@ -90,6 +90,7 @@ export default {
     background-size: auto 60%
     background-image: url("@/assets/img/apple.svg")
     padding-left: 50px
+    padding-top: 2px
     text-align: center
     span
       display: block
@@ -105,7 +106,7 @@ export default {
     .link_app_store
       background-position: 8px center
       padding-left: 22px
-      padding-top: 2px
+      padding-top: 3px
       text-align: center
       span
         font-weight: 400

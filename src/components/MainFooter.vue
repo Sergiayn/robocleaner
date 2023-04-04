@@ -205,6 +205,12 @@ footer .sub_menu_extra
       font-size: 13px
     .link_app_store_qr
       width: auto
+    .link_app
+      a
+        display: block
+        margin: 0 0 0 auto!important
+        &:first-child
+          margin-bottom: 10px!important
     .sub_menu
       padding: 1px 0
 
@@ -227,6 +233,9 @@ footer .sub_menu_extra
         margin: 0 0 8px
         text-align: center
         width: 94px
+      .link_app_store_qr
+        font-size: 9px
+        padding: 3px 8px 0 0
     .icons
       img
         height: 24px
@@ -251,13 +260,15 @@ footer .sub_menu_extra
     .icons-mobile
       display: block
     .link_app
-      margin: 0 auto 20px
+      margin: 0 auto 20px!important
       overflow: hidden
       max-width: 215px
       .link_app_store, .link_app_store_qr
         float: left
         margin: 0 5px
         text-align: center
+      .link_app_store
+        margin-right: 5px!important
     .link_app_store_qr
       font-size: 12px
       img

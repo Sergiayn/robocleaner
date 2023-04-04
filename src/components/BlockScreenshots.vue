@@ -106,8 +106,10 @@ export default {
     font-size: 24px
     font-weight: 400
   .carousel__slide
+    opacity: .5
     transform: rotateY(0) scale(0.9)
   .carousel__slide--active
+    opacity: 1
     transform: rotateY(0) scale(1)
   .controls
     padding-bottom: 40px
