@@ -20,45 +20,42 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide  } from 'vue3-carousel'
 
-// import img_slide_01_en from "@/assets/img/lang/en/slider/01_iPhone-13-Pro-Front.webp"
-import img_slide_02_en from "@/assets/img/lang/en/slider/02_iPhone-13-Pro-Front.webp"
-import img_slide_03_en from "@/assets/img/lang/en/slider/03_iPhone-13-Pro-Front.webp"
-import img_slide_04_en from "@/assets/img/lang/en/slider/04_iPhone-13-Pro-Front.webp"
-import img_slide_05_en from "@/assets/img/lang/en/slider/05_iPhone-13-Pro-Front.webp"
-import img_slide_06_en from "@/assets/img/lang/en/slider/06_iPhone-13-Pro-Front.webp"
-import img_slide_07_en from "@/assets/img/lang/en/slider/07_iPhone-13-Pro-Front.webp"
-import img_slide_08_en from "@/assets/img/lang/en/slider/08_iPhone-13-Pro-Front.webp"
-import img_slide_09_en from "@/assets/img/lang/en/slider/09_iPhone-13-Pro-Front.webp"
-import img_slide_10_en from "@/assets/img/lang/en/slider/10_iPhone-13-Pro-Front.webp"
-import img_slide_11_en from "@/assets/img/lang/en/slider/11_iPhone-13-Pro-Front.webp"
+import slide_01_en from "@/assets/img/lang/en/slider/slide_01.webp"
+import slide_02_en from "@/assets/img/lang/en/slider/slide_02.webp"
+import slide_03_en from "@/assets/img/lang/en/slider/slide_03.webp"
+import slide_04_en from "@/assets/img/lang/en/slider/slide_04.webp"
+import slide_05_en from "@/assets/img/lang/en/slider/slide_05.webp"
+import slide_06_en from "@/assets/img/lang/en/slider/slide_06.webp"
+import slide_07_en from "@/assets/img/lang/en/slider/slide_07.webp"
+import slide_08_en from "@/assets/img/lang/en/slider/slide_08.webp"
+import slide_09_en from "@/assets/img/lang/en/slider/slide_09.webp"
+import slide_10_en from "@/assets/img/lang/en/slider/slide_10.webp"
 
-// import img_slide_01_en from "@/assets/img/lang/en/slider/01_iPhone-13-Pro-Front.webp"
-import img_slide_02_es from "@/assets/img/lang/es/slider/02_iPhone-13-Pro-Front.webp"
-import img_slide_03_es from "@/assets/img/lang/es/slider/03_iPhone-13-Pro-Front.webp"
-import img_slide_04_es from "@/assets/img/lang/es/slider/04_iPhone-13-Pro-Front.webp"
-import img_slide_05_es from "@/assets/img/lang/es/slider/05_iPhone-13-Pro-Front.webp"
-import img_slide_06_es from "@/assets/img/lang/es/slider/06_iPhone-13-Pro-Front.webp"
-import img_slide_07_es from "@/assets/img/lang/es/slider/07_iPhone-13-Pro-Front.webp"
-import img_slide_08_es from "@/assets/img/lang/es/slider/08_iPhone-13-Pro-Front.webp"
-import img_slide_09_es from "@/assets/img/lang/es/slider/09_iPhone-13-Pro-Front.webp"
-import img_slide_10_es from "@/assets/img/lang/es/slider/10_iPhone-13-Pro-Front.webp"
-import img_slide_11_es from "@/assets/img/lang/es/slider/11_iPhone-13-Pro-Front.webp"
+import slide_01_es from "@/assets/img/lang/en/slider/slide_01.webp"
+import slide_02_es from "@/assets/img/lang/es/slider/slide_02.webp"
+import slide_03_es from "@/assets/img/lang/es/slider/slide_03.webp"
+import slide_04_es from "@/assets/img/lang/es/slider/slide_04.webp"
+import slide_05_es from "@/assets/img/lang/es/slider/slide_05.webp"
+import slide_06_es from "@/assets/img/lang/es/slider/slide_06.webp"
+import slide_07_es from "@/assets/img/lang/es/slider/slide_07.webp"
+import slide_08_es from "@/assets/img/lang/es/slider/slide_08.webp"
+import slide_09_es from "@/assets/img/lang/es/slider/slide_09.webp"
+import slide_10_es from "@/assets/img/lang/es/slider/slide_10.webp"
 
 export default {
   name: "BlockScreenshots",
   data() {
     const items = [
-      // {src: {en:img_slide_02_en,es:img_slide_01_es}},
-      {src: {en:img_slide_02_en,es:img_slide_02_es}},
-      {src: {en:img_slide_03_en,es:img_slide_03_es}},
-      {src: {en:img_slide_04_en,es:img_slide_04_es}},
-      {src: {en:img_slide_05_en,es:img_slide_05_es}},
-      {src: {en:img_slide_06_en,es:img_slide_06_es}},
-      {src: {en:img_slide_07_en,es:img_slide_07_es}},
-      {src: {en:img_slide_08_en,es:img_slide_08_es}},
-      {src: {en:img_slide_09_en,es:img_slide_09_es}},
-      {src: {en:img_slide_10_en,es:img_slide_10_es}},
-      {src: {en:img_slide_11_en,es:img_slide_11_es}},
+      {src: {en:slide_01_en,es:slide_01_es}},
+      {src: {en:slide_02_en,es:slide_02_es}},
+      {src: {en:slide_03_en,es:slide_03_es}},
+      {src: {en:slide_04_en,es:slide_04_es}},
+      {src: {en:slide_05_en,es:slide_05_es}},
+      {src: {en:slide_06_en,es:slide_06_es}},
+      {src: {en:slide_07_en,es:slide_07_es}},
+      {src: {en:slide_08_en,es:slide_08_es}},
+      {src: {en:slide_09_en,es:slide_09_es}},
+      {src: {en:slide_10_en,es:slide_10_es}},
     ]
     const carousel_conf = {
       settings: {
