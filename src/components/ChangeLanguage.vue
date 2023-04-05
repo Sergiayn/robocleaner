@@ -1,25 +1,49 @@
 <template>
   <div class="change-language">
-    <label for="locale"></label>
-    <select v-model="locale">
-      <option v-for="language in $i18n.availableLocales" :key="language">{{language}}</option>
-    </select>
+      <div class="tooltip-lang_label" @click.prevent="isOpen = !isOpen">
+          <label for="locale"></label>
+          <span class="tooltip-lang_txt">{{$i18n.locale}}</span>
+          <i class="tooltip-lang_icon"></i>
+      </div>
+      <div class="tooltip-lang_content" v-if="isOpen">
+        <ul>
+            <li v-for="language in $i18n.availableLocales"
+                @click.prevent="setLocale(language)"
+                :key="language">
+                <div class="locale">{{language}}</div>
+                <div class="name">{{getNameLocale(language)}}</div>
+            </li>
+        </ul>
+      </div>
   </div>
 </template>
 
 <script>
+import {ref} from "vue";
+
 export default {
   name: 'ChangeLanguage',
   data () {
-    return { locale: this.$i18n.locale }
+    const isOpen = ref(false)
+    return { locale: this.$i18n.locale, isOpen }
   },
-  watch: {
-    locale (locale) {
-      const hash = this.$router.currentRoute.value.hash
-      this.$i18n.locale = locale
-      this.$router.replace({params:{locale},hash})
-    }
-  }
+  methods: {
+      getNameLocale(locale) {
+          const names = {
+              en: 'English',
+              es: 'Español'
+          }
+          return names[locale]
+      },
+      setLocale(locale) {
+          if (locale === this.$i18n.locale)
+              return
+          const hash = this.$router.currentRoute.value.hash
+          this.$i18n.locale = locale
+          this.$router.replace({params:{locale},hash})
+          this.isOpen = false
+      },
+  },
 }
 </script>
 
@@ -27,26 +51,65 @@ export default {
 <style scoped lang="sass">
 .change-language
   max-width: 85px
-  overflow: hidden
+  .tooltip-lang_label
+    overflow: hidden
   label
     background-image: url("@/assets/img/lang_globe.svg")
-    margin: 0 10px 0 0
-    float: left
+    margin: 0 4px 0 0
     height: 24px
     width: 24px
-  select
+  label, .tooltip-lang_txt, .tooltip-lang_icon
+    display: inline-block
+    float: left
+  .tooltip-lang_txt
     background: transparent
     border: 0
     color: white
     font-size: 16px
     font-weight: 500
-    float: right
-    max-width: 60px
+    max-width: 73px
+    margin-right: 10px
     height: 24px
     outline: none
     text-transform: uppercase
-    width: 50px
-  option
+  .tooltip-lang_icon
+    background-image: url("@/assets/img/triangle-down.svg")
+    background-position: center center
+    background-repeat: no-repeat
+    margin-top: 4px
+    height: 16px
+    width: 16px
+  .tooltip-lang_content
+    background-image: url("@/assets/img/triangle-top.svg")
+    background-position: top center
+    background-repeat: no-repeat
     color: black
+    margin-top: 10px
+    padding-top: 10px
+    position: absolute
+    width: 110px
+    ul
+      background-color: white
+      border-radius: 8px
+      list-style: none
+      margin: 0
+      padding: 0
+    li
+      padding: 12px
+      > div
+        display: inline-block
+    .locale
+      background-color: #CBCBCB
+      border-radius: 4px
+      color: white
+      font-size: 12px
+      margin-right: 8px
+      padding: 3px
+      text-transform: uppercase
+      height: 22px
+      width: 22px
+    .name
+      font-size: 14px
+      font-weight: 500
 
 </style>
