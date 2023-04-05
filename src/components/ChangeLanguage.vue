@@ -59,6 +59,7 @@ export default {
     height: 24px
     width: 24px
   label, .tooltip-lang_txt, .tooltip-lang_icon
+    cursor: pointer
     display: inline-block
     float: left
   .tooltip-lang_txt
@@ -95,6 +96,7 @@ export default {
       margin: 0
       padding: 0
     li
+      cursor: pointer
       padding: 12px
       > div
         display: inline-block

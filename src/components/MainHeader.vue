@@ -103,6 +103,8 @@ header
   z-index: 10
   a
     color: white
+    &:hover
+      color: white
 
 .header-desktop
   padding-top: 18px
