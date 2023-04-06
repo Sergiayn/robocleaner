@@ -1,11 +1,20 @@
 <template>
-  <div class="change-language">
-      <div class="tooltip-lang_label" @click.prevent="isOpen = !isOpen">
+  <div class="change-language"       
+      @mouseover="isOverLang = true"
+      @mouseleave="isOverLang = false"
+      >
+      <div class="tooltip-lang_label"
+        @mouseover="isOverLangLabel = true"
+        @mouseleave="isOverLangLabel = false"
+        >
           <label for="locale"></label>
           <span class="tooltip-lang_txt">{{$i18n.locale}}</span>
           <i class="tooltip-lang_icon"></i>
       </div>
-      <div class="tooltip-lang_content" v-if="isOpen">
+      <div class="tooltip-lang_content" 
+      @mouseover="isOverLangContent = true"
+      @mouseleave="isOverLangContent = false"
+      v-if="isOpen">
         <ul>
             <li v-for="language in $i18n.availableLocales"
                 @click.prevent="setLocale(language)"
@@ -25,7 +34,16 @@ export default {
   name: 'ChangeLanguage',
   data () {
     const isOpen = ref(false)
-    return { locale: this.$i18n.locale, isOpen }
+    const isOverLang = ref(false)
+    const isOverLangContent = ref(false)
+    const isOverLangLabel = ref(false)
+    return { 
+      locale: this.$i18n.locale, 
+      isOpen,
+      isOverLang,
+      isOverLangContent,
+      isOverLangLabel
+    }
   },
   methods: {
       getNameLocale(locale) {
@@ -43,6 +61,21 @@ export default {
           this.$router.replace({params:{locale},hash})
           this.isOpen = false
       },
+      toggleMenu() {
+        if(this.isOverLang === true)
+          this.isOpen = true
+        else {
+          setTimeout(() => {
+            if(false === this.isOverLangContent && false === this.isOverLangLabel)
+              this.isOpen = false
+          },1000)
+        }
+      }
+  },
+  watch: {
+    isOverLang() { this.toggleMenu()},
+    isOverLangContent() { this.toggleMenu()},
+    isOverLangLabel() { this.toggleMenu()},
   },
 }
 </script>
