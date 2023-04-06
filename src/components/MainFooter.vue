@@ -97,12 +97,12 @@ footer
   .link_app
     margin: auto
     max-width: 220px
-    text-align: right
+    text-align: left
     a
       height: 27px
       width: 94px
-    &:first-child
-      margin-right: 15px
+      &:first-child
+        margin-right: 15px
   .link_app_store_qr
     font-size: 10px
     font-weight: 500

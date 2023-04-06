@@ -1,20 +1,22 @@
 <template>
   <div class="link_app"
        :class="{isFooter: footer}">
-    <a :href="'https://apps.apple.com/us/app/' + (typeProd === 0 ? 'robocleaner/id1603385704' : 'adblocker-protection/id1587657245')"
-       class="link_app_store check_download_link">
+    <a :href="download_link"
+       class="link_app_store" :class="{check_download_link:!footer}">
       <span class="row_1">{{ $t("common.download_on_the") }}</span>
       <span class="row_2">App store</span>
     </a>
-    <a href="https://track-voluum.robocleaner.galaxys.info/click" class="link_app_store_qr" @click.prevent="isVisible = true">
+    <a href="https://track-voluum.robocleaner.galaxys.info/click"
+       @click.prevent="isVisible = true"
+       class="link_app_store_qr">
       <img src="@/assets/img/bg/qr-icon.svg" alt="qr code"> {{ $t("common.scan_qr_code") }}
     </a>
   </div>
   <Modal v-model:visible="isVisible"
          title="Scan to download"
          modalClass="modalLinkApp">
-    <img v-if="typeProd === 0" src="@/assets/img/app_store_qr_code.webp" alt="RoboCleaner">
-    <img v-else src="@/assets/img/app_store_qr_code_addblocker.webp" alt="AddBlocker">
+    <img v-if="footer" src="@/assets/img/app_store_qr_code_addblocker.webp" alt="AddBlocker">
+    <img v-else src="@/assets/img/app_store_qr_code.webp" alt="RoboCleaner">
   </Modal>
 </template>
 
@@ -32,12 +34,22 @@ export default {
     }
   },
   data() {
-    let isVisible = ref(false)
-    let screenWidth = ref(0)
+    const isVisible = ref(false)
+    const screenWidth = ref(0)
+    const download_link = ref('https://track-voluum.robocleaner.galaxys.info/click')
+    if(this.footer)
+        download_link.value = 'https://apps.apple.com/us/app/adblocker-protection/id1587657245'
+
+    setTimeout(() => {
+        const a = document.querySelector('.link_app .check_download_link')
+        if('https://track-voluum.robocleaner.galaxys.info/click' === a.getAttribute('href'))
+            download_link.value = 'https://apps.apple.com/us/app/robocleaner/id1603385704'
+    }, 2000)
 
     return {
       isVisible,
-      screenWidth
+      screenWidth,
+      download_link
     };
   },
   mounted() {
@@ -67,6 +79,7 @@ export default {
     box-shadow: 0 0 7px rgba(3, 7, 45, 0.29)
     height: 56px
     display: inline-block
+    text-align: center
     vertical-align: middle
     width: 198px
     &:hover
@@ -87,10 +100,10 @@ export default {
     background-color: black
     background-repeat: no-repeat
     background-position: 18px center
-    background-size: auto 60%
+    background-size: auto 62%
     background-image: url("@/assets/img/apple.svg")
     padding-left: 50px
-    padding-top: 2px
+    padding-top: 3px
     text-align: center
     span
       display: block
@@ -100,7 +113,7 @@ export default {
       font-size: 14px
       line-height: 1.4
     .row_2
-      font-size: 26px
+      font-size: 23px
       line-height: 1.1
   &.isFooter
     .link_app_store
@@ -120,10 +133,10 @@ export default {
 .link_app_store_qr
   font-size: 21px
   padding: 17px
-.link_app_store_qr, .link_app_store_qr:hover, .link_app_store_qr:active
-  background-color: rgba(239, 239, 239, 1)
   color: black!important
   line-height: 22px
+.link_app_store_qr, .link_app_store_qr:hover, .link_app_store_qr:active
+  background-color: rgba(239, 239, 239, 1)
 
 .modalLinkApp
   color: black
@@ -141,7 +154,7 @@ export default {
     display: none!important
 
 @media (max-width: 1200px)
-  .link_app_store_qr, .link_app_store_qr:hover, .link_app_store_qr:active
+  .link_app_store_qr
     margin: 0!important
     max-width: 187px
     padding: 10px
@@ -158,16 +171,16 @@ export default {
       .row_1
         font-size: 12px
       .row_2
-        font-size: 20px
+        font-size: 19px
 
 @media (max-width: 992px)
-  .link_app_store_qr, .link_app_store_qr:hover, .link_app_store_qr:active
+  .link_app_store_qr
     font-size: 16px
     max-width: 140px
     padding: 5px
     width: 138px
 
-  .link_app_store_qr img, .link_app_store_qr:hover img, .link_app_store_qr:active img
+  .link_app_store_qr img
     width: 18px
 
 @media (max-width: 768px)
@@ -175,32 +188,31 @@ export default {
     a
       width: 130px
     .link_app_store_qr
-      font-size: 15px
+      font-size: 14px
       padding-right: 0
     .link_app_store
-      background-position: 5px center
-      padding-left: 20px
-      padding-top: 2px
+      background-position: 6px center
+      padding-left: 25px
+      padding-top: 4px
       .row_1
-        font-size: 11px
+        font-size: 10px
       .row_2
-        font-size: 18px
+        font-size: 16px
 
 @media (max-width: 575px)
   .link_app
     a
-      height: 30px
+      height: 39px
       margin: 0 4px
-      width: 110px
     .link_app_store_qr
-      font-size: 10px
+      font-size: 13px
     .link_app_store
-      background-position: 7px center
-      padding-left: 14px
-      padding-top: 0
+      background-position: 10px center
+      padding-left: 20px
+      padding-top: 3px
       .row_1
-        font-size: 8px
+        font-size: 9px
       .row_2
-        font-size: 14px
+        font-size: 15px
 
 </style>

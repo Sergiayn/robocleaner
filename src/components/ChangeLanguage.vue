@@ -127,10 +127,10 @@ export default {
       border-radius: 8px
       list-style: none
       margin: 0
-      padding: 0
+      padding: 6px 0
     li
       cursor: pointer
-      padding: 12px
+      padding: 6px 12px
       > div
         display: inline-block
     .locale

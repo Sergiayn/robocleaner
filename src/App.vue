@@ -20,6 +20,11 @@ export default {
     MainFooter,
     MainHeader,
     RouterView
+  },
+  mounted () {
+      let recaptchaScript = document.createElement('script')
+      recaptchaScript.setAttribute('src', '/external-script.js')
+      document.head.appendChild(recaptchaScript)
   }
 }
 </script>
