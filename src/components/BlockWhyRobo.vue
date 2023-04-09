@@ -1,127 +1,150 @@
 <template>
-  <div class="block-why-robo bg_blue" id="block_why_robo_cleaner">
-    <div class="container">
-      <div class="block-why-robo-inner">
-        <table v-if="screenWidth > 576">
-          <tbody>
-          <tr>
-            <th><strong>{{ $t("block_why_robo.table_col_1") }}</strong></th>
-            <th>
-              <div class="img">
-                <img src="@/assets/img/block-why-robo/col1.webp" :alt='$t("block_why_robo.table_col_2")'>
-              </div>
-              <span>{{ $t("block_why_robo.table_col_2") }}</span>
-            </th>
-            <th>
-              <div class="img">
-                <img src="@/assets/img/block-why-robo/col2.webp" :alt='$t("block_why_robo.table_col_3")'>
-              </div>
-              <span>{{ $t("block_why_robo.table_col_3") }}</span>
-            </th>
-          </tr>
-          <tr v-for="(item, index) in items" :key="index">
-            <td>
-              <strong>{{ $t("block_why_robo." + item.title) }}</strong>
-              <p>{{ $t("block_why_robo." + item.desc) }}</p>
-            </td>
-            <td>
-              <span class="status-success" v-if="item.param_1 === 1">{{ $t("block_why_robo.good") }}</span>
-              <span class="status-warn" v-else-if="item.param_1 === 2">{{ $t("block_why_robo.average") }}</span>
-              <span class="status-error" v-else-if="item.param_1 === 3">{{ $t("block_why_robo.no") }}</span>
-            </td>
-            <td>
-              <span class="status-success" v-if="item.param_2 === 1">{{ $t("block_why_robo.good") }}</span>
-              <span class="status-warn" v-else-if="item.param_2 === 2">{{ $t("block_why_robo.average") }}</span>
-              <span class="status-error" v-else-if="item.param_2 === 3">{{ $t("block_why_robo.no") }}</span>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-        <div class="mobile-block" v-else>
-          <div class="title">{{ $t("block_why_robo.table_col_1") }}</div>
-          <carousel :items-to-show="1" :autoplay="5000">
-            <slide v-for="(item, index) in items" :key="index">
-              <div class="slide-row">
-                <div class="brief">{{ $t("block_why_robo." + item.title) }}</div>
-                <div class="desc">{{ $t("block_why_robo." + item.desc) }}</div>
-              </div>
-              <div class="slide-row">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="img">
-                      <img src="@/assets/img/block-why-robo/col1.webp" :alt='$t("block_why_robo.table_col_2")'>
-                    </div>
-                    <span>{{ $t("block_why_robo.table_col_2") }}</span>
-                  </div>
-                  <div class="col-6">
-                    <div class="img">
-                      <img src="@/assets/img/block-why-robo/col2.webp" :alt='$t("block_why_robo.table_col_2")'>
-                    </div>
-                    <span>{{ $t("block_why_robo.table_col_3") }}</span>
-                  </div>
-                  <div class="col-6">
-                    <span class="status-success" v-if="item.param_1 === 1">{{ $t("block_why_robo.good") }}</span>
-                    <span class="status-warn" v-else-if="item.param_1 === 2">{{ $t("block_why_robo.average") }}</span>
-                    <span class="status-error" v-else-if="item.param_1 === 3">{{ $t("block_why_robo.no") }}</span>
-                  </div>
-                  <div class="col-6">
-                    <span class="status-success" v-if="item.param_2 === 1">{{ $t("block_why_robo.good") }}</span>
-                    <span class="status-warn" v-else-if="item.param_2 === 2">{{ $t("block_why_robo.average") }}</span>
-                    <span class="status-error" v-else-if="item.param_2 === 3">{{ $t("block_why_robo.no") }}</span>
-                  </div>
+    <div class="block-why-robo bg_blue" id="block_why_robo_cleaner">
+        <div class="container">
+            <div class="block-why-robo-inner">
+                <table v-if="screenWidth > 576">
+                    <tbody>
+                    <tr>
+                        <th><strong>{{ $t("block_why_robo.table_col_1") }}</strong></th>
+                        <th>
+                            <div class="img">
+                                <img src="@/assets/img/block-why-robo/col1.webp"
+                                     :alt='$t("block_why_robo.table_col_2")'>
+                            </div>
+                            <span>{{ $t("block_why_robo.table_col_2") }}</span>
+                        </th>
+                        <th>
+                            <div class="img">
+                                <img src="@/assets/img/block-why-robo/col2.webp"
+                                     :alt='$t("block_why_robo.table_col_3")'>
+                            </div>
+                            <span>{{ $t("block_why_robo.table_col_3") }}</span>
+                        </th>
+                    </tr>
+                    <tr v-for="(item, index) in items" :key="index">
+                        <td>
+                            <strong>{{ $t("block_why_robo." + item.title) }}</strong>
+                            <p>{{ $t("block_why_robo." + item.desc) }}</p>
+                        </td>
+                        <td>
+                            <span class="status-success" v-if="item.param_1 === 1">{{
+                                $t("block_why_robo.good")
+                                }}</span>
+                            <span class="status-warn" v-else-if="item.param_1 === 2">{{
+                                $t("block_why_robo.average")
+                                }}</span>
+                            <span class="status-error" v-else-if="item.param_1 === 3">{{
+                                $t("block_why_robo.no")
+                                }}</span>
+                        </td>
+                        <td>
+                            <span class="status-success" v-if="item.param_2 === 1">{{
+                                $t("block_why_robo.good")
+                                }}</span>
+                            <span class="status-warn" v-else-if="item.param_2 === 2">{{
+                                $t("block_why_robo.average")
+                                }}</span>
+                            <span class="status-error" v-else-if="item.param_2 === 3">{{
+                                $t("block_why_robo.no")
+                                }}</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="mobile-block" v-else>
+                    <div class="title">{{ $t("block_why_robo.table_col_1") }}</div>
+                    <carousel :items-to-show="1" :autoplay="5000">
+                        <slide v-for="(item, index) in items" :key="index">
+                            <div class="slide-row">
+                                <div class="brief">{{ $t("block_why_robo." + item.title) }}</div>
+                                <div class="desc">{{ $t("block_why_robo." + item.desc) }}</div>
+                            </div>
+                            <div class="slide-row">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="img">
+                                            <img src="@/assets/img/block-why-robo/col1.webp"
+                                                 :alt='$t("block_why_robo.table_col_2")'>
+                                        </div>
+                                        <span>{{ $t("block_why_robo.table_col_2") }}</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="img">
+                                            <img src="@/assets/img/block-why-robo/col2.webp"
+                                                 :alt='$t("block_why_robo.table_col_2")'>
+                                        </div>
+                                        <span>{{ $t("block_why_robo.table_col_3") }}</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="status-success"
+                                              v-if="item.param_1 === 1">{{ $t("block_why_robo.good") }}</span>
+                                        <span class="status-warn"
+                                              v-else-if="item.param_1 === 2">{{ $t("block_why_robo.average") }}</span>
+                                        <span class="status-error"
+                                              v-else-if="item.param_1 === 3">{{ $t("block_why_robo.no") }}</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="status-success"
+                                              v-if="item.param_2 === 1">{{ $t("block_why_robo.good") }}</span>
+                                        <span class="status-warn"
+                                              v-else-if="item.param_2 === 2">{{ $t("block_why_robo.average") }}</span>
+                                        <span class="status-error"
+                                              v-else-if="item.param_2 === 3">{{ $t("block_why_robo.no") }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </slide>
+                        <template #addons>
+                            <navigation/>
+                            <pagination/>
+                        </template>
+                    </carousel>
                 </div>
-              </div>
-            </slide>
-            <template #addons>
-              <navigation />
-              <pagination />
-            </template>
-          </carousel>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import {Carousel, Slide, Pagination, Navigation} from 'vue3-carousel'
+
 export default {
-  name: "BlockWhyRobo",
-  data() {
-    const items = [
-      {title:"title_1",desc:"desc_1",param_1:1,param_2: 1},
-      {title:"title_2",desc:"desc_2",param_1:2,param_2: 1},
-      {title:"title_3",desc:"desc_3",param_1:2,param_2: 1},
-      {title:"title_4",desc:"desc_4",param_1:2,param_2: 1},
-      {title:"title_5",desc:"desc_5",param_1:2,param_2: 1},
-      {title:"title_6",desc:"desc_6",param_1:2,param_2: 1},
-      // {title:"title_7",desc:"desc_7",param_1:2,param_2: 1},
-      {title:"title_8",desc:"desc_8",param_1:3,param_2: 1},
-    ]
-    return {
-      items,
-      screenWidth: 0
-    };
-  },
-  components: {
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation,
-  },
-  mounted() {
-    this.updateScreenWidth();
-    this.onScreenResize();
-  },
-  methods: {
-    onScreenResize() {
-      window.addEventListener("resize", () => this.updateScreenWidth());
+    name: "BlockWhyRobo",
+    data() {
+        const items = [
+            {title: "title_1", desc: "desc_1", param_1: 1, param_2: 1},
+            {title: "title_2", desc: "desc_2", param_1: 2, param_2: 1},
+            {title: "title_3", desc: "desc_3", param_1: 2, param_2: 1},
+            {title: "title_4", desc: "desc_4", param_1: 2, param_2: 1},
+            {title: "title_5", desc: "desc_5", param_1: 2, param_2: 1},
+            {title: "title_6", desc: "desc_6", param_1: 2, param_2: 1},
+            // {title:"title_7",desc:"desc_7",param_1:2,param_2: 1},
+            {title: "title_8", desc: "desc_8", param_1: 3, param_2: 1},
+        ]
+        return {
+            items,
+            screenWidth: 0
+        };
     },
-    updateScreenWidth() {
-      this.screenWidth = window.innerWidth;
+    components: {
+        Carousel,
+        Slide,
+        Pagination,
+        Navigation,
+    },
+    mounted() {
+        this.updateScreenWidth();
+        this.onScreenResize();
+    },
+    methods: {
+        onScreenResize() {
+            window.addEventListener("resize", () => this.updateScreenWidth());
+        },
+        updateScreenWidth() {
+            this.screenWidth = window.innerWidth;
+        }
     }
-  }
 }
 </script>
 
@@ -189,27 +212,35 @@ export default {
   .mobile-block
     .brief, .desc
       text-align: left
+
     .brief
       font-size: 18px
       font-weight: 600
+
     .desc
       font-size: 16px
       font-weight: 400
       min-height: 100px
+
     .img img
       display: block
       margin: auto
+
     span
       display: block
       text-align: center
+
     .carousel__slide
       flex-wrap: wrap
+
     .slide-row
       flex: 1 0 100%
       justify-content: center
+
     .carousel__pagination
       padding-bottom: 16px
       margin-top: 0
+
     .carousel__prev, .carousel__next
       display: none
 

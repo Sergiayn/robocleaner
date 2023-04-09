@@ -1,82 +1,88 @@
 <template>
-  <div class="change-language"       
-      @mouseover="isOverLang = true"
-      @mouseleave="isOverLang = false"
-      >
-      <div class="tooltip-lang_label"
-        @mouseover="isOverLangLabel = true"
-        @mouseleave="isOverLangLabel = false"
+    <div class="change-language"
+         @mouseover="isOverLang = true"
+         @mouseleave="isOverLang = false"
+    >
+        <div class="tooltip-lang_label"
+             @mouseover="isOverLangLabel = true"
+             @mouseleave="isOverLangLabel = false"
         >
-          <label for="locale"></label>
-          <span class="tooltip-lang_txt">{{$i18n.locale}}</span>
-          <i class="tooltip-lang_icon"></i>
-      </div>
-      <div class="tooltip-lang_content" 
-      @mouseover="isOverLangContent = true"
-      @mouseleave="isOverLangContent = false"
-      v-if="isOpen">
-        <ul>
-            <li v-for="language in $i18n.availableLocales"
-                @click.prevent="setLocale(language)"
-                :key="language">
-                <div class="locale">{{language}}</div>
-                <div class="name">{{getNameLocale(language)}}</div>
-            </li>
-        </ul>
-      </div>
-  </div>
+            <label for="locale"></label>
+            <span class="tooltip-lang_txt">{{ $i18n.locale }}</span>
+            <i class="tooltip-lang_icon"></i>
+        </div>
+        <div class="tooltip-lang_content"
+             @mouseover="isOverLangContent = true"
+             @mouseleave="isOverLangContent = false"
+             v-if="isOpen">
+            <ul>
+                <li v-for="language in $i18n.availableLocales"
+                    @click.prevent="setLocale(language)"
+                    :key="language">
+                    <div class="locale">{{ language }}</div>
+                    <div class="name">{{ getNameLocale(language) }}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </template>
 
 <script>
 import {ref} from "vue";
 
 export default {
-  name: 'ChangeLanguage',
-  data () {
-    const isOpen = ref(false)
-    const isOverLang = ref(false)
-    const isOverLangContent = ref(false)
-    const isOverLangLabel = ref(false)
-    return { 
-      locale: this.$i18n.locale, 
-      isOpen,
-      isOverLang,
-      isOverLangContent,
-      isOverLangLabel
-    }
-  },
-  methods: {
-      getNameLocale(locale) {
-          const names = {
-              en: 'English',
-              es: 'Español'
-          }
-          return names[locale]
-      },
-      setLocale(locale) {
-          if (locale === this.$i18n.locale)
-              return
-          const hash = this.$router.currentRoute.value.hash
-          this.$i18n.locale = locale
-          this.$router.replace({params:{locale},hash})
-          this.isOpen = false
-      },
-      toggleMenu() {
-        if(this.isOverLang === true)
-          this.isOpen = true
-        else {
-          setTimeout(() => {
-            if(false === this.isOverLangContent && false === this.isOverLangLabel)
-              this.isOpen = false
-          },1000)
+    name: 'ChangeLanguage',
+    data() {
+        const isOpen = ref(false)
+        const isOverLang = ref(false)
+        const isOverLangContent = ref(false)
+        const isOverLangLabel = ref(false)
+        return {
+            locale: this.$i18n.locale,
+            isOpen,
+            isOverLang,
+            isOverLangContent,
+            isOverLangLabel
         }
-      }
-  },
-  watch: {
-    isOverLang() { this.toggleMenu()},
-    isOverLangContent() { this.toggleMenu()},
-    isOverLangLabel() { this.toggleMenu()},
-  },
+    },
+    methods: {
+        getNameLocale(locale) {
+            const names = {
+                en: 'English',
+                es: 'Español'
+            }
+            return names[locale]
+        },
+        setLocale(locale) {
+            if (locale === this.$i18n.locale)
+                return
+            const hash = this.$router.currentRoute.value.hash
+            this.$i18n.locale = locale
+            this.$router.replace({params: {locale}, hash})
+            this.isOpen = false
+        },
+        toggleMenu() {
+            if (this.isOverLang === true)
+                this.isOpen = true
+            else {
+                setTimeout(() => {
+                    if (false === this.isOverLangContent && false === this.isOverLangLabel)
+                        this.isOpen = false
+                }, 1000)
+            }
+        }
+    },
+    watch: {
+        isOverLang() {
+            this.toggleMenu()
+        },
+        isOverLangContent() {
+            this.toggleMenu()
+        },
+        isOverLangLabel() {
+            this.toggleMenu()
+        },
+    },
 }
 </script>
 
@@ -84,17 +90,21 @@ export default {
 <style scoped lang="sass">
 .change-language
   max-width: 85px
+
   .tooltip-lang_label
     overflow: hidden
+
   label
     background-image: url("@/assets/img/lang_globe.svg")
     margin: 0 4px 0 0
     height: 24px
     width: 24px
+
   label, .tooltip-lang_txt, .tooltip-lang_icon
     cursor: pointer
     display: inline-block
     float: left
+
   .tooltip-lang_txt
     background: transparent
     border: 0
@@ -106,6 +116,7 @@ export default {
     height: 24px
     outline: none
     text-transform: uppercase
+
   .tooltip-lang_icon
     background-image: url("@/assets/img/triangle-down.svg")
     background-position: center center
@@ -113,6 +124,7 @@ export default {
     margin-top: 4px
     height: 16px
     width: 16px
+
   .tooltip-lang_content
     background-image: url("@/assets/img/triangle-top.svg")
     background-position: top center
@@ -122,17 +134,21 @@ export default {
     padding-top: 10px
     position: absolute
     width: 110px
+
     ul
       background-color: white
       border-radius: 8px
       list-style: none
       margin: 0
       padding: 6px 0
+
     li
       cursor: pointer
       padding: 6px 12px
+
       > div
         display: inline-block
+
     .locale
       background-color: #CBCBCB
       border-radius: 4px
@@ -143,6 +159,7 @@ export default {
       text-transform: uppercase
       height: 22px
       width: 22px
+
     .name
       font-size: 14px
       font-weight: 500
