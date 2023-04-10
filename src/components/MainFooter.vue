@@ -20,7 +20,7 @@
 
                 <div class="footer-bottom">
                     <div class="row">
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">
                             <div class="icons">
                                 <ul>
                                     <li>
@@ -42,7 +42,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
                             <div class="sub_menu">
                                 <ul>
                                     <li>
@@ -315,7 +315,7 @@ footer .sub_menu_extra
     .link_app
       margin: 0 auto 20px !important
       overflow: hidden
-      max-width: 215px
+      max-width: 195px
 
       .link_app_store, .link_app_store_qr
         float: left

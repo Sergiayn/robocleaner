@@ -67,7 +67,8 @@ export default {
                 1199: {itemsToShow: 5.5},
                 768: {itemsToShow: 3.5},
                 575: {itemsToShow: 3},
-                450: {itemsToShow: 1.9},
+                450: {itemsToShow: 2.1},
+                400: {itemsToShow: 2},
             },
         }
 

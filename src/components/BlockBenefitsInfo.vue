@@ -289,7 +289,14 @@ export default {
   .block-download-buttons-inner
     background-position: center 20%
     background-size: 200%
-    padding: 40px 0 75px
+    padding: 10px 0 40px
+
+    .link_app
+      margin: auto
+      width: 130px
+      a
+        display: block
+        margin: 0 0 10px
 
     p
       display: none

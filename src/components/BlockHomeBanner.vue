@@ -406,7 +406,7 @@ export default {
       display: none
 
   .block-about-inner
-    padding: 80px 0 200px
+    padding: 120px 0 200px
     text-align: center
 
     .title

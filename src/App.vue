@@ -80,7 +80,7 @@ body
 
 @media (max-width: 575px)
   .main
-    margin-top: 64px
+    margin-top: 46px
   .modal-vue3-content
     max-width: 97%
 </style>

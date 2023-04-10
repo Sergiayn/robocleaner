@@ -21,7 +21,7 @@ const translate = {
     menu: {
         contact: "Contacto",
         home: "Hogar",
-        privacy: "Privacidad",
+        privacy: "Política de privacidad",
         terms_of_use: "Condiciones de uso"
     },
     block_home_banner: {

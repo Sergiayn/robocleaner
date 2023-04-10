@@ -37,7 +37,7 @@ export default {
     margin-bottom: 22px
     text-align: center
   .content
-    font-size: 22px
+    font-size: 18px
 
 @media (max-width: 991px)
   .block-term-of-use
