@@ -72,7 +72,7 @@ body
 
 @media (max-width: 768px)
   .main
-    margin-top: 66px
+    margin-top: 46px
   .icon
     background-size: 30px 30px
     height: 30px

@@ -13,7 +13,7 @@
         </a>
     </div>
     <Modal v-model:visible="isVisible"
-           title="Scan to download"
+           :title='$t("common.scan_to_download")'
            modalClass="modalLinkApp">
         <img v-if="footer" src="@/assets/img/app_store_qr_code_addblocker.webp" alt="AddBlocker">
         <img v-else src="@/assets/img/app_store_qr_code.webp" alt="RoboCleaner">
