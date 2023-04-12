@@ -15,8 +15,8 @@
     <Modal v-model:visible="isVisible"
            :title='$t("common.scan_to_download")'
            modalClass="modalLinkApp">
-        <img v-if="footer" src="@/assets/img/app_store_qr_code_addblocker.webp" alt="AddBlocker">
-        <img v-else src="@/assets/img/app_store_qr_code.webp" alt="RoboCleaner">
+        <img v-if="footer" src="@/assets/img/app_store_qr_code_addblocker.svg" alt="AddBlocker">
+        <img v-else src="@/assets/img/app_store_qr_code.svg" alt="RoboCleaner">
     </Modal>
 </template>
 
@@ -161,17 +161,22 @@ export default {
   color: black
 
   .modal-vue3-content
-    width: 270px !important
+    width: 450px !important
 
   .modal-vue3-header
     border: 0
-    font-size: 24px
-    font-weight: 700
+    font-size: 32px
+    font-weight: 600
     margin: auto
     padding: 22px !important
+    text-align: center
 
   .modal-vue3-body
     padding: 0 22px 22px !important
+    text-align: center
+    img
+      max-height: 100%
+      max-width: 100%
 
   .modal-vue3-footer
     display: none !important
@@ -249,5 +254,9 @@ export default {
 
       .row_2
         font-size: 15px
+
+  .modalLinkApp
+    .modal-vue3-header
+        font-size: 20px
 
 </style>

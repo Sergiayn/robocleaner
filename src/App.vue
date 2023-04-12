@@ -26,7 +26,7 @@ export default {
         let recaptchaScript = document.createElement('script')
         recaptchaScript.setAttribute('src', '/external-script.js')
         document.head.appendChild(recaptchaScript)
-    },500)
+    },10000)
   }
 }
 </script>
