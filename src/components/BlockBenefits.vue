@@ -216,7 +216,7 @@ export default {
 
 @media (max-width: 576px)
   .block-benefits
-    padding: 40px 0
+    padding: 30px 0 40px
   .benefits_list
     .item
       padding: 0

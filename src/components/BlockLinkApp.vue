@@ -165,16 +165,19 @@ export default {
 
   .modal-vue3-header
     border: 0
+    border-bottom: 1px solid black
     font-size: 32px
     font-weight: 600
     margin: auto
-    padding: 22px !important
+    padding: 12px !important
     text-align: center
 
   .modal-vue3-body
-    padding: 0 22px 22px !important
+    padding: 40px !important
     text-align: center
     img
+      border: 7px solid
+      border-radius: 20px
       max-height: 100%
       max-width: 100%
 
@@ -235,6 +238,13 @@ export default {
       .row_2
         font-size: 16px
 
+  .modalLinkApp
+    .modal-vue3-header
+      padding: 10px !important
+    
+    .modal-vue3-body
+      padding: 23px 34px !important
+
 @media (max-width: 575px)
   .link_app
     a
@@ -257,6 +267,13 @@ export default {
 
   .modalLinkApp
     .modal-vue3-header
-        font-size: 20px
+        font-size: 15px
+        padding: 9px 5px 8px !important
+    .modal-vue3-body
+      padding: 19px 28px !important
+      img
+        border: 4px solid black
+    .modal-vue3-content
+      max-width: 220px
 
 </style>

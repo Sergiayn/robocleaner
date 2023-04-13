@@ -364,7 +364,7 @@ export default {
   .main-top-block
     padding: 0
   .main-top-bg
-    background: url("@/assets/img/bg/bg_girl_translucency3.webp") -7% 100% no-repeat
+    background: url("@/assets/img/bg/bg_girl_translucency3.webp") -7% 102% no-repeat
     background-size: 210px
     padding: 0 0 15px
   .main-top

@@ -81,7 +81,7 @@
                                     {{ $t("header.subscribe") }}
                                 </router-link>
                             </li>
-                            <li @click="isOpenMobileMenu = false">
+                            <li v-if="false" @click="isOpenMobileMenu = false">
                                 <router-link :to="{name:'Home', params:{locale:$i18n.locale}, hash:'#block_plans'}">
                                     {{ $t("header.plans") }}
                                 </router-link>

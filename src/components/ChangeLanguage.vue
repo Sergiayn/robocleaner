@@ -86,7 +86,7 @@ export default {
                     setTimeout(() => {
                         if (false === this.isOverLangContent && false === this.isOverLangLabel)
                             this.isOpen = false
-                    }, 1000)
+                    }, 400)
                 }
             }
         }

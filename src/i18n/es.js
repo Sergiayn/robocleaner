@@ -69,7 +69,8 @@ const translate = {
         title: "Suscríbete a las noticias de RoboCleaner",
         desc: "Sé el primero en obtener las últimas noticias sobre lanzamientos de productos de RoboCleaner y más.",
         email: "Correo electrónico",
-        subscribe: "Suscribirse"
+        subscribe: "Suscribirse",
+        modal_desc: "¡Gracias por suscribirse a las noticias de RoboCleaner!"
     },
     block_benefits: {
         item_1: "Ahorro de espacio ilimitado",

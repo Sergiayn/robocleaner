@@ -23,10 +23,10 @@ export default {
   },
   mounted () {
     setTimeout(function () {
-        let recaptchaScript = document.createElement('script')
-        recaptchaScript.setAttribute('src', '/external-script.js')
-        document.head.appendChild(recaptchaScript)
-    },10000)
+        let externalScript = document.createElement('script')
+        externalScript.setAttribute('src', '/external-script.js')
+        document.head.appendChild(externalScript)
+    },1000)
   }
 }
 </script>

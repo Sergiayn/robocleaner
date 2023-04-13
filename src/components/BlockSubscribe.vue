@@ -19,7 +19,7 @@
            title=""
            modalClass="modalBlockSubscribe">
         <div class="desc">
-            Thank you for subscribing to RoboCleaner news!
+            {{ $t("block_subscribe.modal_desc") }}
         </div>
     </Modal>
 </template>
@@ -181,7 +181,10 @@ export default {
 
     form
       margin-bottom: 30px
-
+  
+  .modalBlockSubscribe
+    .modal-vue3-content
+      max-width: 85%
     .modal-vue3-body
       .desc
         font-size: 22px
