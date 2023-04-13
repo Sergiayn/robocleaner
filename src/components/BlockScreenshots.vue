@@ -31,7 +31,7 @@ import slide_08_en from "@/assets/img/lang/en/slider/slide_08.webp"
 import slide_09_en from "@/assets/img/lang/en/slider/slide_09.webp"
 import slide_10_en from "@/assets/img/lang/en/slider/slide_10.webp"
 
-import slide_01_es from "@/assets/img/lang/en/slider/slide_01.webp"
+import slide_01_es from "@/assets/img/lang/es/slider/slide_01.webp"
 import slide_02_es from "@/assets/img/lang/es/slider/slide_02.webp"
 import slide_03_es from "@/assets/img/lang/es/slider/slide_03.webp"
 import slide_04_es from "@/assets/img/lang/es/slider/slide_04.webp"
