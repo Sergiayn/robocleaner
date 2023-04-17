@@ -1,22 +1,42 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://robocleaner.galaxys.info/</loc>
-        <lastmod>2023-02-24T10:02:24+00:00</lastmod>
+        <loc>https://robocleaner.galaxys.info/en</loc>
+        <lastmod>2023-04-12T10:02:24+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://robocleaner.galaxys.info/term_of_use.html</loc>
-        <lastmod>2023-02-24T10:02:24+00:00</lastmod>
+        <loc>https://robocleaner.galaxys.info/es</loc>
+        <lastmod>2023-04-12T10:02:24+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://robocleaner.galaxys.info/en/terms-of-use</loc>
+        <lastmod>2023-04-12T10:02:24+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://robocleaner.galaxys.info/privacy.html</loc>
-        <lastmod>2023-02-24T10:02:24+00:00</lastmod>
+        <loc>https://robocleaner.galaxys.info/es/terms-of-use</loc>
+        <lastmod>2023-04-12T10:02:24+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://robocleaner.galaxys.info/contact.html</loc>
-        <lastmod>2023-02-24T10:02:24+00:00</lastmod>
+        <loc>https://robocleaner.galaxys.info/en/privacy</loc>
+        <lastmod>2023-04-12T10:02:24+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://robocleaner.galaxys.info/es/privacy</loc>
+        <lastmod>2023-04-12T10:02:24+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://robocleaner.galaxys.info/en/contact</loc>
+        <lastmod>2023-04-12T10:02:24+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://robocleaner.galaxys.info/es/contact</loc>
+        <lastmod>2023-04-12T10:02:24+00:00</lastmod>
         <priority>0.80</priority>
     </url>
 </urlset>
