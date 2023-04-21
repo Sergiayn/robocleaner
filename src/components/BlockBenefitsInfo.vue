@@ -74,7 +74,7 @@ export default {
             {title: "title_2", col_1: false, col_2: true},
             {title: "title_3", col_1: true, col_2: true},
             {title: "title_4", col_1: true, col_2: true},
-            {title: "title_5", col_1: false, col_2: true},
+            // {title: "title_5", col_1: false, col_2: true},
             {title: "title_6", col_1: true, col_2: true},
             {title: "title_7", col_1: false, col_2: true},
             {title: "title_8", col_1: false, col_2: true},

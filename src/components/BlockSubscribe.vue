@@ -8,9 +8,8 @@
                 <div class="title">{{ $t("block_subscribe.title") }}</div>
                 <div class="desc">{{ $t("block_subscribe.desc") }}</div>
                 <form @submit.prevent="subscribeUser">
-                    <input type="email" name="email" v-model="email" :placeholder='$t("block_subscribe.email")'
-                           required>
-                    <input type="submit" value="Subscribe">
+                    <input type="email" name="email" v-model="email" :placeholder='$t("block_subscribe.email")' required>
+                    <input type="submit" :value='$t("block_subscribe.subscribe")'>
                 </form>
             </div>
         </div>

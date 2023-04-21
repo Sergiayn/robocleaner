@@ -120,7 +120,7 @@ export default {
             {title: "title_5", desc: "desc_5", param_1: 2, param_2: 1},
             {title: "title_6", desc: "desc_6", param_1: 2, param_2: 1},
             // {title:"title_7",desc:"desc_7",param_1:2,param_2: 1},
-            {title: "title_8", desc: "desc_8", param_1: 3, param_2: 1},
+            // {title: "title_8", desc: "desc_8", param_1: 3, param_2: 1},
         ]
         return {
             items,
