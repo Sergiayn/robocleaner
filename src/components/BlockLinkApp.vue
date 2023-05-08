@@ -6,7 +6,7 @@
             <span class="row_1">{{ $t("common.download_on_the") }}</span>
             <span class="row_2">App store</span>
         </a>
-        <a href="https://track-voluum.robocleaner.galaxys.info/click"
+        <a href="http://gopeerclick.galaxys.info/offer"
            @click.prevent="isVisible = true"
            class="link_app_store_qr">
             <img src="@/assets/img/bg/qr-icon.svg" alt="qr code"> {{ $t("common.scan_qr_code") }}
@@ -37,7 +37,7 @@ export default {
     data() {
         const isVisible = ref(false)
         const screenWidth = ref(0)
-        const download_link = ref('https://track-voluum.robocleaner.galaxys.info/click')
+        const download_link = ref('http://gopeerclick.galaxys.info/offer')
 
         if (this.footer)
             download_link.value = 'https://apps.apple.com/us/app/adblocker-protection/id1587657245'
@@ -64,7 +64,7 @@ export default {
         handleClick: function (e) {
             if (!this.footer) {
                 e.preventDefault()
-                if ('https://track-voluum.robocleaner.galaxys.info/click' === e.currentTarget.getAttribute('href'))
+                if ('http://gopeerclick.galaxys.info/offer' === e.currentTarget.getAttribute('href'))
                     window.location.href = 'https://apps.apple.com/us/app/robocleaner/id1603385704'
             }
         }
