@@ -269,6 +269,9 @@ export default {
     .modal-vue3-header
         font-size: 15px
         padding: 9px 5px 8px !important
+        > div:nth-child(2)
+            top: 12px!important
+            right: 5px!important
     .modal-vue3-body
       padding: 19px 28px !important
       img

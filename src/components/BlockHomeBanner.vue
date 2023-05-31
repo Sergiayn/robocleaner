@@ -28,7 +28,7 @@
                 <div class="features-web">
                     <ul>
                         <li>{{ $t("block_home_banner.feature_item_1") }}</li>
-                        <li>{{ $t("block_home_banner.feature_item_2") }}</li>
+<!--                        <li>{{ $t("block_home_banner.feature_item_2") }}</li>-->
                         <li>{{ $t("block_home_banner.feature_item_3") }}</li>
                         <li>{{ $t("block_home_banner.feature_item_4") }}</li>
                         <li>{{ $t("block_home_banner.feature_item_5") }}</li>
@@ -38,13 +38,14 @@
                 <div class="features-mob">
                     <ul>
                         <li>{{ $t("block_home_banner.feature_item_1") }}</li>
-                        <li>{{ $t("block_home_banner.feature_item_2") }}</li>
-                        <li>{{ $t("block_home_banner.feature_item_3") }}</li>
+<!--                        <li>{{ $t("block_home_banner.feature_item_2") }}</li>-->
+                        <li>{{ $t("block_home_banner.feature_item_6") }}</li>
+                        <li>{{ $t("block_home_banner.feature_item_4") }}</li>
                     </ul>
                     <ul>
-                        <li>{{ $t("block_home_banner.feature_item_4") }}</li>
                         <li>{{ $t("block_home_banner.feature_item_5") }}</li>
-                        <li>{{ $t("block_home_banner.feature_item_6") }}</li>
+                        <li>{{ $t("block_home_banner.feature_item_3") }}</li>
+
                     </ul>
                 </div>
             </div>

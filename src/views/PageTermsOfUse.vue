@@ -6,7 +6,7 @@
         <ul class="content">
           <li>{{ $t("page_terms_of_use.content_1") }}</li>
           <li>{{ $t("page_terms_of_use.content_2") }}</li>
-          <li>{{ $t("page_terms_of_use.content_3") }}</li>
+<!--          <li>{{ $t("page_terms_of_use.content_3") }}</li>-->
           <li>{{ $t("page_terms_of_use.content_4") }}</li>
           <li>{{ $t("page_terms_of_use.content_5") }}</li>
           <li>{{ $t("page_terms_of_use.content_6") }}</li>
@@ -30,11 +30,11 @@ export default {
 <style lang="sass">
 .block-term-of-use
   background: radial-gradient(36.91% 304.36% at 29.14% 58.59%, #F3F7FF 33.15%, #CEDFFF 100%)
-  padding: 22px 0 16px
+  padding: 56px 0
   .title
     font-size: 24px
     font-weight: 600
-    margin-bottom: 22px
+    margin-bottom: 24px
     text-align: center
   .content
     font-size: 18px
@@ -48,7 +48,7 @@ export default {
 
 @media (max-width: 768px)
   .block-term-of-use
-    padding: 10px 0
+    padding: 30px 0
     .title
       font-size: 20px
     .content

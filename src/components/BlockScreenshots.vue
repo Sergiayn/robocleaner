@@ -29,7 +29,6 @@ import slide_06_en from "@/assets/img/lang/en/slider/slide_06.webp"
 import slide_07_en from "@/assets/img/lang/en/slider/slide_07.webp"
 import slide_08_en from "@/assets/img/lang/en/slider/slide_08.webp"
 import slide_09_en from "@/assets/img/lang/en/slider/slide_09.webp"
-import slide_10_en from "@/assets/img/lang/en/slider/slide_10.webp"
 
 import slide_01_es from "@/assets/img/lang/es/slider/slide_01.webp"
 import slide_02_es from "@/assets/img/lang/es/slider/slide_02.webp"
@@ -40,7 +39,6 @@ import slide_06_es from "@/assets/img/lang/es/slider/slide_06.webp"
 import slide_07_es from "@/assets/img/lang/es/slider/slide_07.webp"
 import slide_08_es from "@/assets/img/lang/es/slider/slide_08.webp"
 import slide_09_es from "@/assets/img/lang/es/slider/slide_09.webp"
-import slide_10_es from "@/assets/img/lang/es/slider/slide_10.webp"
 
 export default {
     name: "BlockScreenshots",
@@ -55,7 +53,6 @@ export default {
             {src: {en: slide_07_en, es: slide_07_es}},
             {src: {en: slide_08_en, es: slide_08_es}},
             {src: {en: slide_09_en, es: slide_09_es}},
-            {src: {en: slide_10_en, es: slide_10_es}},
         ]
         const carousel_conf = {
             settings: {
