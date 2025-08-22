@@ -101,7 +101,7 @@ const translate = {
     },
     page_terms_of_use: {
         content_1: "You can subscribe for a premium account with unlimited and no ads.",
-        content_2: "Subscription is from $1.99/week after 7 days free trial.",
+        content_2: "Subscription is from $1.99/week.",
         content_3: "You can subscribe for a premium account with unlimited and no ads.",
         content_4: "All prices are subject to change without notification.\n" +
             "We occasionally run promotion prices as incentives or limited time opportunities for qualifying purchases made during the promotional time period.\n" +
