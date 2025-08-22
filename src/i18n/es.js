@@ -101,7 +101,7 @@ const translate = {
     },
     page_terms_of_use: {
         content_1: "Puedes suscribirte a una cuenta premium con contenido ilimitado y sin publicidad.",
-        content_2: "La suscripción cuesta $1.99/semana después de 7 días de prueba gratis.",
+        content_2: "La suscripción cuesta $1.99/semana.",
         content_3: "Puedes suscribirte a una cuenta premium con contenido ilimitado y sin publicidad.",
         content_4: "Todos los precios están sujetos a cambios sin previo aviso. Ocasionalmente ofrecemos precios promocionales como incentivos o oportunidades de tiempo limitado para compras elegibles realizadas durante el período promocional. Debido a la naturaleza promocional y sensible al tiempo de estos eventos, no podemos ofrecer protección de precios, descuentos retroactivos ni reembolsos por compras anteriores en caso de una reducción de precio u oferta promocional.",
         content_5: "El pago se cargará a la cuenta de iTunes al confirmar la compra.",
