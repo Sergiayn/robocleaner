@@ -11,7 +11,7 @@
     "core-js": "^3.30.0",
     "usemodal-vue3": "^0.3.7",
     "vue": "^3.2.47",
-    "vue-i18n": "^9.2.2",
+    "vue-i18n": "11.1.10",
     "vue-router": "^4.1.6",
     "vue3-carousel": "^0.2.16",
     "vue3-cookies": "^1.0.6"
@@ -24,7 +24,7 @@
     "@vue/cli-service": "~5.0.8",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.7.1",
-    "node-sass": "^8.0.0",
+    "sass": "^1.100.0",
     "sass-loader": "^13.2.2"
   },
   "eslintConfig": {

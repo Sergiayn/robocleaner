@@ -91,7 +91,6 @@ export default {
 
 <style lang="sass">
 .bg_iphone
-  background-image:
   background-position: 0 center
   background-repeat: no-repeat
   background-size: 650px
