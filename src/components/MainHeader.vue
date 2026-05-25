@@ -18,7 +18,7 @@
                                         {{ $t("header.screenshots") }}
                                     </router-link>
                                 </li>
-                                <li>
+                                <li v-if="'en' === $i18n.locale">
                                     <router-link
                                             :to="{name:'Home', params:{locale:$i18n.locale}, hash:'#block_why_robo_cleaner'}"
                                             class="long-a">{{ $t("header.why_robo_cleaner") }}

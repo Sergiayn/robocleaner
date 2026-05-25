@@ -1,5 +1,5 @@
 <template>
-    <div class="block-benefits">
+    <div class="block-benefits" v-if="'en' === $i18n.locale">
         <div class="container">
             <div class="block-benefits-inner">
                 <div class="benefits_list"

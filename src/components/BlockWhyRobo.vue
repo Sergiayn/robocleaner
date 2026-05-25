@@ -1,5 +1,5 @@
 <template>
-    <div class="block-why-robo bg_blue" id="block_why_robo_cleaner">
+    <div class="block-why-robo bg_blue" id="block_why_robo_cleaner" v-if="'en' === $i18n.locale">
         <div class="container">
             <div class="block-why-robo-inner">
                 <table v-if="screenWidth > 576">
