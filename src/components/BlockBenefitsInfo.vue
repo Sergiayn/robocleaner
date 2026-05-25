@@ -1,5 +1,5 @@
 <template>
-    <div class="block-benefits_info bg_blue">
+    <div class="block-benefits_info bg_blue" v-if="false">
         <div class="row">
             <div class="col-xl-3">
                 <div class="block-benefits_info__img"

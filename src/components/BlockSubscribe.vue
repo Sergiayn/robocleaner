@@ -1,5 +1,5 @@
 <template>
-    <div class="block-subscribe" id="block_subscribe">
+    <div class="block-subscribe" id="block_subscribe" v-if="false">
         <div class="container">
             <div class="d-none d-xs-block">
                 <block-link-app></block-link-app>

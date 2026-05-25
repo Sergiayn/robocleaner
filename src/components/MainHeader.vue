@@ -24,13 +24,13 @@
                                             class="long-a">{{ $t("header.why_robo_cleaner") }}
                                     </router-link>
                                 </li>
-                                <li>
+                                <li  v-if="false">
                                     <router-link
                                             :to="{name:'Home', params:{locale:$i18n.locale}, hash:'#block_subscribe'}">
                                         {{ $t("header.subscribe") }}
                                     </router-link>
                                 </li>
-                                <li>
+                                <li v-if="false">
                                     <router-link :to="{name:'Home', params:{locale:$i18n.locale}, hash:'#block_plans'}">
                                         {{ $t("header.plans") }}
                                     </router-link>
