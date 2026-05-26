@@ -1,5 +1,5 @@
 <template>
-    <div class="block-benefits_info bg_blue" v-if="false">
+    <div class="block-benefits_info bg_blue">
         <div class="row">
             <div class="col-xl-3">
                 <div class="block-benefits_info__img"
@@ -299,6 +299,6 @@ export default {
         margin: 0 0 10px
 
     p
-      display: none
+      padding-top: 20px
 
 </style>
